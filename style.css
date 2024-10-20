@@ -1,0 +1,38 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+ul{
+/* border: 1px solid red; */
+     display: flex;
+     list-style: none;
+     width: fit-content;
+     margin: auto;
+     margin-right: 0;
+}
+li {
+     /* border: 1px solid yellow; */
+     padding: 30px 20px;
+} 
+
+.head{
+    /* border: 1px solid green; */
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+    margin-left: 40px;
+    /* color: white; */
+    font-size: 45px;
+    font-weight: lighter;
+    display: flex;
+}
+#blur {
+    display: flex;
+    align-items: center;  /* Vertically align items inside the div */
+    backdrop-filter: blur(8px);
+    width: 100%;
+    margin: auto;
+    height: 80px;  /* Set a fixed height if you want the top bar to maintain a specific height */
+    overflow: hidden;  /* Prevents overflow if elements grow larger than intended */
+}
