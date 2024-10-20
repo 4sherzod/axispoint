@@ -11,22 +11,6 @@
 			padding: 0;
 			box-sizing: border-box;
 		}
-		header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 20px;
-		}
-		header h1 {
-			font-size: 24px;
-			color: #b28e50;
-		}
-		header nav a {
-			margin-left: 20px;
-			color: #333;
-			text-decoration: none;
-			font-size: 16px;
-		}
 		.hero {
 			background-image: url('your-image-path.jpg');
 			background-size: cover;
@@ -142,15 +126,10 @@
 </head>
 <body>
 
-<header>
-	<h1>ACCESSPOINT</h1>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">Dual Nationality</a>
-		<a href="#">Business Setup</a>
-		<a href="#">Contacts</a>
-	</nav>
-</header>
+<?php
+	require_once "topbar.php";
+	renderHeader();
+?>
 
 <section class="hero">
 	<h2>ACCESSPOINT</h2>
