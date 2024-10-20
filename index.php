@@ -3,126 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AccessPoint - Citizenship by Investment Programs</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		.hero {
-			background-image: url('your-image-path.jpg');
-			background-size: cover;
-			background-position: center;
-			height: 400px;
-			position: relative;
-			text-align: center;
-		}
-		.hero h2 {
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			color: white;
-			font-size: 36px;
-			font-weight: bold;
-		}
-		.section {
-			padding: 40px 20px;
-		}
-		.section img {
-			margin-bottom: 20px;
-		}
-		.section p {
-			font-size: 16px;
-			margin: 0 auto 20px;
-			max-width: 800px;
-		}
-		.section h1 {
-			font-size: 40px;
-			margin: 0 auto 20px;
-			font-weight: normal;
-			text-align: center;
-		}
-		.dark-section {
-			background-color: #253450;
-			color: white;
-			padding: 60px 20px;
-			color: #dbbf8b;
-			text-align: center;
-		}
-		.dark-section h2 {
-			/* margin: 0 auto; */
-			margin-bottom: 30px;
-		}
-		.benefits {
-			display: flex;
-			justify-content: space-around;
-			text-align: center;
-			margin-top: 30px;
-		}
-		.benefit {
-			max-width: 200px;
-		}
-		.benefit h3 {
-			margin-bottom: 10px;
-		}
-		.benefit p {
-			font-size: 14px;
-		}
-		table {
-			width: 70%;
-			margin: 40px auto;
-			border-collapse: collapse;
-		}
-		table, th, td {
-			border-bottom: 1px solid black;
-			padding: 10px;
-		}
-		footer {
-			background-color: #253450;
-			color: white;
-		}
-
-		footer p, footer a {
-			margin: 0;
-		}
-
-		footer a {
-			color: #dbbf8b;
-			text-decoration: none;
-		}
-		footer div {
-			margin: 0 auto;
-			max-width: 80%;
-			text-align: center;
-			padding: 20px;
-			display: flex;
-			justify-content: space-between; /* Align items to opposite corners */
-			align-items: center;
-		}
-		.last{ 
-			max-width: 350px;
-		}
-		
-		.section1 div {
-			display: flex;
-			max-width: 70%;
-			margin: 0 auto;
-			font-size: 16px;
-			flex-direction: row; /* Ensure the paragraphs are laid out horizontally */
-		}
-
-		.section1 div p {
-			padding: 25px;
-			width: 50%; /* Each paragraph will take 50% of the parent div */
-			box-sizing: border-box; /* Ensure padding doesn't affect width */
-		}
-		.section1 {
-			text-align: center;
-		}
-	</style>
+	<title>AxisPoint Citizenship by Investment Programs</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -132,11 +20,10 @@
 ?>
 
 <section class="hero">
-	<h2>ACCESSPOINT</h2>
+	<!-- <h2>AXISPOINT</h2> -->
 </section>
-
 <section class="section1">
-	<img src="your-logo-image.jpg" alt="AccessPoint Logo" width="100">
+	<!-- <img src="pass.jpg" alt="AxisPoint Logo" width="100%"> -->
 	<div>
 		<p>
 			Savory & Partners are trusted by Governments around the world to source individuals of the highest calibre and to successfully process second Citizenship by investment programmes and Residency solutions for them.
