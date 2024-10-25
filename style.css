@@ -1,3 +1,12 @@
+@font-face {
+     font-family: 'RoyalExquisite';
+     src: url('/fonts/RoyalExquisite.ttf') format('truetype'),
+          url('/fonts/RoyalExquisite.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ } 
+
+
 *{
      margin: 0;
      padding: 0;
