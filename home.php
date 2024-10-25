@@ -69,7 +69,6 @@
                z-index: 9999;
                transition: opacity 0.5s ease;
           }
-
           /* Spinner style */
           .spinner {
                border: 8px solid #f3f3f3;
@@ -80,13 +79,11 @@
                animation: spin 1s linear infinite;
                margin-bottom: 20px;
           }
-
           /* Spinner animation */
           @keyframes spin {
                0% { transform: rotate(0deg); }
                100% { transform: rotate(360deg); }
           }
-
           /* Style for the main content (initially hidden) */
           #main-content {
                text-align: center;

@@ -15,7 +15,9 @@
 <body>
 
 <?php
-	require_once "topbar.php";
+	include_once "load.php";
+	renderLoader();
+	include_once "topbar.php";
 	renderHeader();
 ?>
 
@@ -61,7 +63,7 @@
 
 </section>
 
-<section class="section">
+<section class="section" id = "tablecountries">
 	<h1>Caribbean Citizenship by Investment Programs</h1>
 	<table>
 		<thead>

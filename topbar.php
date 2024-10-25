@@ -40,6 +40,7 @@ function renderHeader() {
             </nav>
         </div>
     </header>
+    <div id="emptyspace"></div>
     ';
 }
 ?>
