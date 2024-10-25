@@ -9,6 +9,9 @@
 /* 151 - nav text underline
 */
 
+a{
+    text-decoration: none;
+}
         header {
             display: flex;
             justify-content: space-between;
@@ -53,6 +56,10 @@
     color:#dbbf8b;
     font-family: 'RoyalExquisite', serif;
 }
+#title i{
+    font-size: 25px;
+}
+
  /* h3{
     font-family: 'RoyalExquisite', serif;
  } */

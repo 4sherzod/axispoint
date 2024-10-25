@@ -5,7 +5,7 @@ function renderHeader() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <header>
         <div> 
-            <p id="title">AXIS POINT</p>
+            <a href="index.php"><p id="title"><i class="fa-regular fa-compass"></i>AXIS POINT</p></a>
             <nav>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About us</a></li>
