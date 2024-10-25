@@ -3,16 +3,23 @@ function renderHeader() {
     echo '
     <link rel="stylesheet" href="topbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <header>
         <div> 
             <a href="index.php"><p id="title"><i class="fa-regular fa-compass"></i>AXIS POINT</p></a>
             <nav>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="about-us.php">About us</a></li>
                 <li class="dropdown-toggle">
                     <a href="services.php">Services <i class="fa-solid fa-angle-down"></i> </a>
                     <ul class="dropdown">
-                        <li><a href="about.html">Corporate Formation</a></li>
+                        <li><a href="about.html">Corporate Formation & Administration (UAE)</a></li>
                         <li><a href="team.html">Tax Planning & Offshore Service</a></li>
                         <li><a href="faq.html">Human Resources & Recruitment Services</a></li>
                         <li><a href="citizenship-by-investment.php">Citizenship by Investment & Residency Solutions</a></li>

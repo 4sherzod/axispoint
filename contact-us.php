@@ -7,9 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-		require_once "topbar.php";
-		renderHeader();
-	?>
+    
 </body>
 </html>
