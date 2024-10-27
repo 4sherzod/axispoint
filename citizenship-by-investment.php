@@ -60,7 +60,6 @@
 			<p>Better tax planning and opportunities for global business expansion.</p>
 		</div>
 	</div>
-
 </section>
 
 <section class="section" id = "tablecountries">

@@ -14,12 +14,12 @@ function renderHeader() {
         <div> 
             <a href="index.php"><p id="title"><i class="fa-regular fa-compass"></i>AXIS POINT</p></a>
             <nav>
-                <li><a href="home.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About us</a></li>
                 <li class="dropdown-toggle">
                     <a href="services.php">Services <i class="fa-solid fa-angle-down"></i> </a>
                     <ul class="dropdown">
-                        <li><a href="about.html">Corporate Formation & Administration (UAE)</a></li>
+                        <li><a href="Corporate-Formation-&-Administration.php">Corporate Formation & Administration (UAE)</a></li>
                         <li><a href="team.html">Tax Planning & Offshore Service</a></li>
                         <li><a href="faq.html">Human Resources & Recruitment Services</a></li>
                         <li><a href="citizenship-by-investment.php">Citizenship by Investment & Residency Solutions</a></li>
