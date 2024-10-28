@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-
 header a {
     text-decoration: none;
 }
@@ -16,16 +15,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    border-bottom: 1px solid lightgrey;
+    background-color: white; /* Default background color */
+    /* border-bottom: 1px solid lightgrey; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* Keeps the header above other content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 header h1 {
@@ -34,10 +33,10 @@ header h1 {
 }
 
 header nav a {
-    /* margin-left: 20px; */
-    color: #333;
+    color: #333; /* Default text color */
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease; /* Smooth transition for color */
 }
 
 header div {
@@ -52,21 +51,16 @@ header div {
 
 #title {
     font-size: 25px;
-    font-weight: light;
+    font-weight: lighter;
     color: #dbbf8b;
-    font-family: 'RoyalExquisite', serif;
+    /* font-family: 'RoyalExquisite', serif; */
 }
 
 #title i {
     font-size: 25px;
 }
 
-/* h3{
-    font-family: 'RoyalExquisite', serif;
- } */
-
 /* Nav Item Styling with Hover Line */
-
 header nav {
     display: flex;
     align-items: center;
@@ -76,86 +70,59 @@ header nav {
 header nav a {
     position: relative;
     display: inline-block;
-    text-decoration: none;
     padding: 8px 12px;
     color: #000;
-    /* Adjust color as needed */
-    transition: color 0.3s ease;
-    /* Smooth color transition */
 }
 
-/* Create the line below the text */
 header nav a::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     height: 1px;
-    /* Thickness of the line */
     width: 0;
-    /* Start with a width of 0 */
     background-color: #b28e50;
-    /* Adjust color as needed */
     transition: width 0.3s ease;
-    /* Smooth width transition */
 }
 
-/* Expand the line on hover */
 nav a:hover::after {
     width: 100%;
-    /* Expand to full width on hover */
 }
 
-/* Optional: Change link color on hover */
 nav a:hover {
     color: #001a57;
-    /* Adjust to match your theme */
 }
 
-
-
 /* Basic Styling */
-ul,
-li {
+ul, li {
     list-style: none;
 }
 
 nav li {
     position: relative;
     height: 40px;
-    /* border: 1px solid red; */
 }
 
 /* Dropdown Menu Styling */
-/* Dropdown Menu Styling */
 .dropdown {
     display: block;
-    /* Keep it block, but hidden initially */
     position: absolute;
     top: 90%;
-    /* Position below the nav bar */
     background: white;
     width: 300px;
     padding: 0;
     list-style-type: none;
     opacity: 0;
-    /* Start hidden for animation */
     max-height: 0;
-    /* Start collapsed */
     overflow: hidden;
-    /* Hide overflow until expanded */
     transition: opacity 0.5s ease, max-height 0.5s ease;
-    /* Smooth fade and expand */
     box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.23);
     z-index: 1000;
     text-align: center;
-    /* Center align text */
 }
 
 .dropdown li {
     padding: 10px 15px;
-    /* Adjust padding as needed */
-
     text-align: center;
 }
 
@@ -163,24 +130,11 @@ nav li {
     text-decoration: none;
     display: block;
     text-align: center;
-    /* Center align text within the dropdown items */
 }
 
-i {
-    font-size: 12px;
-    font-weight: lighter;
-    line-height: 18px;
-}
-
-/* .dropdown li:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-} */
-/* Display dropdown on hover with animation */
 .dropdown-toggle:hover>.dropdown {
     opacity: 1;
-    /* Fade in */
     max-height: 1000px;
-    /* Expand */
     background-color: white;
 }
 
@@ -192,36 +146,26 @@ i {
     border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.dropdown-submenu {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    left: 100%;
-    /* Position to the right of the parent item */
-    top: 0;
-    /* Aligns with the parent item */
-    min-width: fit-content;
-    background: white;
-    opacity: 0;
-    /* Hidden for animation */
-    max-height: 0;
-    /* Start collapsed */
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.23);
-    z-index: 1000;
-}
 
-/* Display third-level submenu on hover */
-.dropdown li:hover>.dropdown-submenu {
-    display: block;
-    /* Show submenu */
-    opacity: 1;
-    /* Fade in */
-    max-height: 200px;
-    /* Expand */
-}
 #emptyspace {
     height: 80px;
     background-color: white;
+}
+
+
+/* Scroll-activated Styles */
+header.scrolled{
+    background-color: #253450 !important; /* Navy blue */
+}
+
+.dropdown.scrolled{
+    background-color: #253450 !important;
+}
+
+header.scrolled nav a {
+    color: #dbbf8b !important; /* Light gold text */
+}
+
+header.scrolled #title {
+    color: #dbbf8b !important;
 }

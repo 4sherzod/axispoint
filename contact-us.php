@@ -141,6 +141,27 @@
             display: none; /* Hidden by default */
             margin-top: -10px; /* Slight overlap to visually connect the boxes */
         }
+
+        .mil-map-frame {
+            background-color: rgb(229, 229, 229);
+            pointer-events: all;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        .mil-map-frame .mil-map {
+            position: absolute;
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+            -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+            transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+        }
+        .mil-map-frame .mil-map iframe {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -228,6 +249,11 @@
     </section>
     <div id="box1" class="box" onclick="toggleBox()">SMTH</div>
     <div id="box2" class="box">TEXT</div>
+
+    <div class="mil-map-frame mil-up">
+        <div class="mil-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.71493642221!2d55.372732283115!3d25.145326620359967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f669ed1b35c09%3A0xccfac1a17b332e57!2sRepton%20School%20Dubai!5e0!3m2!1sen!2sfi!4v1730117587925!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+    </div>
 
     <script>
         function toggleBox() {
