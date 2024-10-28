@@ -121,10 +121,10 @@
             </li>
         </ol>
     </div>
-     <section class="dark-section">
+     <div id="dark-section" class="dark-section">
          <h2>Why Choose Axis Point for Company Formation?</h2>
          <p style="width: 66%;margin: 0 auto;">At Axis Point, we understand that each business is unique. Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored approach to company formation ensures your specific needs are met. With years of experience, our team has in-depth knowledge of local and international regulations, making us the ideal partner for businesses looking to establish a presence in various jurisdictions.</p>
-     </section>
+     </div>
 
     <div class="button-container">
         <div id="button1" class="button active" onclick="showText('text1', 'button1')">Mainland</div>
