@@ -14,7 +14,14 @@ function renderHeader() {
     
     <header>
         <div> 
-            <a href="index.php"><p id="title"><i class="fa-regular fa-compass"></i>AXIS POINT</p></a>
+            <a href="index.php">
+                <div id="title">
+                    <div id="logo">
+                        <img src="compass.png" alt="">
+                    </div>
+                    <div id="axis">AXIS POINT</div>
+                </div>
+            </a>
             <nav>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About us</a></li>

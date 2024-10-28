@@ -49,15 +49,28 @@ header div {
     margin: 0 auto;
 }
 
+
 #title {
     font-size: 25px;
     font-weight: lighter;
     color: #dbbf8b;
+    line-height: 50px;
+    /* border: 1px solid green; */
+    display: flex;
+    width: 180px;
     /* font-family: 'RoyalExquisite', serif; */
 }
 
 #title i {
     font-size: 25px;
+}
+#logo{
+    width: 40px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+#logo>img{
+    width: 100%;
 }
 
 /* Nav Item Styling with Hover Line */
