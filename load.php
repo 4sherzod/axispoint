@@ -1,7 +1,7 @@
 <?php
 function renderLoader() {
      echo '
-     <link rel="stylesheet" href="load.css">
+     <link rel="stylesheet" href="./css/load.css">
      <script>
           window.addEventListener("load", () => {
                const loader = document.querySelector(".loader");

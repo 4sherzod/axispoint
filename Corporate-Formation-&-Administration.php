@@ -4,58 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Buttons with Exclusive Text Display</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-     <style>
-        .button-container {
-            display: flex;
-            justify-content: space-between; /* Closer spacing */
-            margin-top: 50px;
-            width: 60%; /* Adjust container width to bring buttons closer */
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .button {
-            width: 250px;
-            height: 50px;
-            /* border: 2px solid black; */
-            border-radius: 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    <link rel="stylesheet" href="./css/corporate.css">
+    <style>
+        p{
             font-size: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            background-color: white;
         }
-
-        .button:hover {
-            background-color: #f0f0f0;
+        #companyDiv{
+            display: flex;
+            gap: calc(10%);
+            /* border: 1px solid blue; */
         }
-
-        .button.active {
-            background-color: #253450; /* Active button color */
-            color: #dbbf8b;
+        #companyDiv div{
+            width: 45%;
+            /* border: 1px solid red; */
         }
-
-        .displayText {
-            display: none;
-            margin-top: 50px;
-            font-size: 24px;
-            text-align: center;
-            max-width: 70%;
-            margin: 60px auto ;
+        #companyDiv>div>img{
+            margin: auto;
+            width: 100%;
+            margin-right: 0;
         }
-
-        /* Make sure only one class is visible at a time */
-        .displayText.active {
-            display: block;
+        .companyClass h1, .companyClass{
+            text-align: left;
+            /* font-weight: normal; */
+            /* margin-bottom: 20px; */
+        }
+        .companyClass{
+            width: 80%;
+            margin: 100px auto;
+            line-height: 30px;
+        }
+        ol {
+            list-style-type: decimal; /* Ensure this is set to decimal */
+            margin-left: 20px; /* Add some left margin for better visibility */
+        }
+        ol>li{
+            padding: 10px;
         }
     </style>
 </head>
@@ -66,7 +56,71 @@
           include_once "topbar.php";
           renderHeader();
      ?>
-
+    <div id="companyDiv" class="companyClass">
+        <div> 
+            <h1>Company Formation</h1>
+            <p>Starting a business is an exciting venture, but the process of setting up a company can be overwhelming. From legal documentation to compliance with local regulations, every step requires precision and careful planning. At Axis Point, we take the stress out of company formation by offering comprehensive services that cover every aspect of the process. Our expert team ensures that your business is set up smoothly, legally, and efficiently, allowing you to focus on what truly matters—growing your business.</p>
+        </div>
+        <div><img src="handshake.jpg" alt=""></div>
+    </div>
+    <div>
+    <div id="companyInfoDiv" class="companyClass"> 
+        <h2>Why Choose Axis Point for Company Formation?</h2>
+        <p>At Axis Point, we understand that each business is unique. Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored approach to company formation ensures your specific needs are met. With years of experience, our team has in-depth knowledge of local and international regulations, making us the ideal partner for businesses looking to establish a presence in various jurisdictions.</p>
+        <br>
+        <h2>Our Company Formation Process</h2>
+        <p>Our company formation services cover everything from initial consultation to the final registration of your business. Here’s a step-by-step look at how we make the process seamless:</p>
+        <ol>
+            <li>
+                <p>
+                    <b>Initial Consultation</b><br>
+                    We begin by understanding your business goals, industry, and target market. During this phase, our consultants will discuss various jurisdiction options, helping you choose the most favorable location for your business based on factors such as tax benefits, legal requirements, and operational costs.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Jurisdiction Selection</b><br>
+                    Choosing the right jurisdiction is crucial to the success of your business. Whether you’re setting up in the UAE, Europe, or Asia, we provide expert advice on the best location based on your industry and objectives. We specialize in free zone, mainland, and offshore company formations, ensuring flexibility and tailored solutions.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Business Structure and Legal Advice</b><br>
+                    Selecting the appropriate business structure is vital for your operations. We help you choose from options such as sole proprietorship, limited liability company (LLC), branch office, or subsidiary. Our legal team ensures that the chosen structure aligns with your long-term business goals and complies with all relevant regulations.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Document Preparation and Filing</b><br>
+                    Our experienced team handles all necessary paperwork, including drafting the Memorandum of Association, Articles of Incorporation, and shareholder agreements. We take care of the submission process, ensuring that all documents meet local regulatory requirements. With Axis Point, you won’t have to worry about missing deadlines or incorrect filings.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Business Licensing and Permits</b><br>
+                    Depending on the nature of your business, you may require specific licenses or permits to operate legally. Our team ensures that all the necessary licenses—whether general trade, industrial, or professional—are obtained promptly, allowing your business to start operations as soon as possible.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Bank Account Setup</b><br>
+                    Securing a corporate bank account is an essential part of company formation. We have established partnerships with leading financial institutions and will assist in opening your business bank account. Our team handles all the formalities, ensuring a smooth and hassle-free banking setup that supports your financial operations.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Tax and Compliance Guidance</b><br>
+                    Each jurisdiction has its own tax regulations and compliance requirements. We provide detailed guidance on corporate tax, VAT, and other relevant taxes to ensure your business remains compliant. Additionally, our team offers ongoing support with regulatory filings, annual reports, and other legal obligations.
+                </p>
+            </li>
+            <li>
+                <p>
+                   <b>Visa and Immigration Support</b><br>
+                   If you’re planning to relocate to manage your business or hire foreign talent, our visa services are here to help. We provide assistance with obtaining business owner, investor, and employee visas, ensuring smooth entry and residency in your chosen jurisdiction.
+                </p>
+            </li>
+        </ol>
+    </div>
      <section class="dark-section">
          <h2>Why Choose Axis Point for Company Formation?</h2>
          <p style="width: 66%;margin: 0 auto;">At Axis Point, we understand that each business is unique. Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored approach to company formation ensures your specific needs are met. With years of experience, our team has in-depth knowledge of local and international regulations, making us the ideal partner for businesses looking to establish a presence in various jurisdictions.</p>

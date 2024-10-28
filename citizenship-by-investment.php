@@ -4,13 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AxisPoint Citizenship by Investment Programs</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+	<style>
+		.hero {
+		 background-image: url('pass.jpg');
+		 background-size: cover;
+		 background-position: center;
+		 height: 400px;
+		 position: relative;
+		 text-align: center;
+		}
+	</style>
 </head>
 <body>
 
