@@ -58,8 +58,11 @@
           renderLoader();
           include_once "topbar.php";
           renderHeader();
+            include_once "scrollbar.php";
+            $ar = array("companyDiv", "Company Formation", "dark-section", "Why us?", "buttons", "Locations");
+            scrollbar($ar);
      ?>
-    <div id="companyDiv" class="companyClass">
+    <div id="companyDiv" class="sectionforbar companyClass">
         <div> 
             <h1>Company Formation</h1>
             <p>Starting a business is an exciting venture, but the process of setting up a company can be overwhelming. From legal documentation to compliance with local regulations, every step requires precision and careful planning. At Axis Point, we take the stress out of company formation by offering comprehensive services that cover every aspect of the process. Our expert team ensures that your business is set up smoothly, legally, and efficiently, allowing you to focus on what truly matters—growing your business.</p>
@@ -124,12 +127,12 @@
             </li>
         </ol>
     </div>
-     <div id="dark-section" class="dark-section">
+     <div id="dark-section" class="dark-section sectionforbar">
          <h2>Why Choose Axis Point for Company Formation?</h2>
          <p style="width: 66%;margin: 0 auto;">At Axis Point, we understand that each business is unique. Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored approach to company formation ensures your specific needs are met. With years of experience, our team has in-depth knowledge of local and international regulations, making us the ideal partner for businesses looking to establish a presence in various jurisdictions.</p>
      </div>
 
-    <div class="button-container">
+    <div class="button-container sectionforbar" id="buttons">
         <div id="button1" class="button active" onclick="showText('text1', 'button1')">Mainland</div>
         <div id="button2" class="button" onclick="showText('text2', 'button2')">Freezone</div>
         <div id="button3" class="button" onclick="showText('text3', 'button3')">Virtual Office Solutions</div>
