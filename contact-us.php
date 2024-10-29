@@ -166,6 +166,7 @@
             width: 100%;
             height: 100%;
         }
+<<<<<<< HEAD
 
         #srabotayblyat,
         #srabotayblyat * {
@@ -224,6 +225,10 @@
         #email {
             scroll-margin-top: 150px;
             /* Adjust this value to be the height of your topbar */
+=======
+        #comp{
+            height: 100px;
+>>>>>>> 7031d0144b83db6a1729134b9d4dab1ab33ae257
         }
     </style>
 </head>
@@ -236,7 +241,7 @@
     renderHeader();
     ?>
     <section>
-        <i class="fa-regular fa-compass"></i>
+        <img src="./img/compass.png" alt="" id="comp">
         <h1>Contact Us</h1>
         <p>Let us know how we can help.</p>
     </section>
