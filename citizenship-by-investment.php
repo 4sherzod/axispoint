@@ -13,12 +13,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 	<style>
 		.hero {
-		 background-image: url('pass.jpg');
-		 background-size: cover;
-		 background-position: center;
+		 object-fit: cover;
+		 object-position: center;
 		 height: 400px;
-		 position: relative;
-		 text-align: center;
+		 width: 100%;
+		}
+		#darkImg{
+			padding: 0;
 		}
 	</style>
 </head>
@@ -31,7 +32,8 @@
 	renderHeader();
 ?>
 
-<section class="hero">
+<section id="darkImg" class="dark-section">
+	<img src="./img/pass.jpg" alt="" class="hero">
 	<!-- <h2>AXISPOINT</h2> -->
 </section>
 <section class="section1">
@@ -104,7 +106,7 @@
 
 <footer>
 	<div>
-		<p>&copy;2024. ACCESSPOINT. All Rights Reserved.</p>
+		<p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
 		<a href="#">IDK SOME LINK</a>
 	</div>
 </footer>

@@ -57,7 +57,8 @@ header div {
     line-height: 50px;
     /* border: 1px solid green; */
     display: flex;
-    width: 180px;
+    width: 200px;
+    gap: 7px;
     /* font-family: 'RoyalExquisite', serif; */
 }
 

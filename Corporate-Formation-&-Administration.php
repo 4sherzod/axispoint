@@ -27,7 +27,10 @@
         }
         #companyDiv>div>img{
             margin: auto;
-            width: 100%;
+            /* width: 100%; */
+            object-fit: cover;
+            height: 330px;
+            width: 500px;
             margin-right: 0;
         }
         .companyClass h1, .companyClass{
@@ -61,7 +64,7 @@
             <h1>Company Formation</h1>
             <p>Starting a business is an exciting venture, but the process of setting up a company can be overwhelming. From legal documentation to compliance with local regulations, every step requires precision and careful planning. At Axis Point, we take the stress out of company formation by offering comprehensive services that cover every aspect of the process. Our expert team ensures that your business is set up smoothly, legally, and efficiently, allowing you to focus on what truly matters—growing your business.</p>
         </div>
-        <div><img src="handshake.jpg" alt=""></div>
+        <div><img src="./img/handshake.jpg" alt=""></div>
     </div>
     <div>
     <div id="companyInfoDiv" class="companyClass"> 

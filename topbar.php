@@ -17,7 +17,7 @@ function renderHeader() {
             <a href="index.php">
                 <div id="title">
                     <div id="logo">
-                        <img src="compass.png" alt="">
+                        <img src="./img/compass.png" alt="">
                     </div>
                     <div id="axis">AXIS POINT</div>
                 </div>
@@ -29,8 +29,8 @@ function renderHeader() {
                     <a href="services.php">Services <i class="fa-solid fa-angle-down"></i> </a>
                     <ul class="dropdown">
                         <li><a href="Corporate-Formation-&-Administration.php">Corporate Formation & Administration (UAE)</a></li>
-                        <li><a href="team.html">Tax Planning & Offshore Service</a></li>
-                        <li><a href="faq.html">Human Resources & Recruitment Services</a></li>
+                        <li><a href="tax-planning.php">Tax Planning & Offshore Service</a></li>
+                        <li><a href="hr.php">Human Resources & Recruitment Services</a></li>
                         <li><a href="citizenship-by-investment.php">Citizenship by Investment & Residency Solutions</a></li>
                         <li><a href="shop.html">Trust & Fiduciary Services</a></li>
                         <li><a href="shop-details.html">Brand Protection</a></li>
