@@ -109,9 +109,11 @@ h1 {
      margin: 40px auto;
      border-collapse: collapse;
 }
-#tablecountries table, 
-#tablecountries th, 
-#tablecountries td {
+/* #tablecountries table td{
+     border: 1px solid red;
+} */
+
+#tablecountries table td {
      border-bottom: 1px solid black;
      padding: 10px;
 }

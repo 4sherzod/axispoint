@@ -21,6 +21,18 @@
 		#darkImg{
 			padding: 0;
 		}
+		.countryImg{
+            /* height: 80px; */
+			width: 80px;
+        }
+		
+		table td:first-child{
+			display: flex;
+		}
+		table td:first-child div:nth-child(2){
+			height: fit-content;
+			margin: auto;
+		}
 	</style>
 </head>
 <body>
@@ -86,17 +98,27 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td><img src="" alt="countrylogo">Antigua and Barbuda</td>
+				<td><img src="./gerb/antigua.png" alt="countrylogo" class="countryImg"><div>Antigua and Barbuda</div></td>
 				<td>USD 230,000</td>
 				<td class="last">Visa-free or visa-on-arrival travel to over 150 destinations, including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area.</td>
 			</tr>
 			<tr>
-				<td><img src="" alt="countrylogo">Dominicana</td>
+				<td><img src="./gerb/dominica.png" alt="countrylogo" class="countryImg"><div>Dominicana</div></td>
 				<td>dfhdjsgfhjdsbv</td>
 				<td class="last">Visa-free or visa-on-arrival travel to over 150 destinations, including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area.</td>
 			</tr>
 			<tr>
-				<td><img src="" alt="countrylogo">Grenada</td>
+				<td><img src="./gerb/grenada.png" alt="countrylogo" class="countryImg"><div>Grenada</div></td>
+				<td>USD 230,000</td>
+				<td class="last">Visa-free or visa-on-arrival travel to over 150 destinations, including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area.</td>
+			</tr>
+			<tr>
+				<td><img src="./gerb/st-kitts.png" alt="countrylogo" class="countryImg"><div>St Kitts & Nevis</div></td>
+				<td>USD 230,000</td>
+				<td class="last">Visa-free or visa-on-arrival travel to over 150 destinations, including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area.</td>
+			</tr>
+			<tr>
+				<td><img src="./gerb/st-lucia.png" alt="countrylogo" class="countryImg"><div>St Lucia</div></td>
 				<td>USD 230,000</td>
 				<td class="last">Visa-free or visa-on-arrival travel to over 150 destinations, including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area.</td>
 			</tr>
