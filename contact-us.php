@@ -162,6 +162,9 @@
             width: 100%;
             height: 100%;
         }
+        #comp{
+            height: 100px;
+        }
     </style>
 </head>
 
@@ -173,7 +176,7 @@
     renderHeader();
     ?>
     <section>
-        <i class="fa-regular fa-compass"></i>
+        <img src="./img/compass.png" alt="" id="comp">
         <h1>Contact Us</h1>
         <p>Let us know how we can help.</p>
     </section>
