@@ -33,7 +33,7 @@ function renderHeader() {
                         <li><a href="hr.php">Human Resources & Recruitment Services</a></li>
                         <li><a href="citizenship-by-investment.php">Citizenship by Investment & Residency Solutions</a></li>
                         <li><a href="shop.html">Trust & Fiduciary Services</a></li>
-                        <li><a href="shop-details.html">Brand Protection</a></li>
+                        <li><a href="brand-protection.php">Brand Protection</a></li>
                         <li><a href="#">Business Support & Outsourcing Services</a></li>
                         <li><a href="#">Banking Solution</a></li>
                         <li><a href="#">Concierge Services</a></li>
