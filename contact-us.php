@@ -138,8 +138,10 @@
 
         #box2 {
             background-color: lightblue;
-            display: none; /* Hidden by default */
-            margin-top: -10px; /* Slight overlap to visually connect the boxes */
+            display: none;
+            /* Hidden by default */
+            margin-top: -10px;
+            /* Slight overlap to visually connect the boxes */
         }
 
         .mil-map-frame {
@@ -149,6 +151,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .mil-map-frame .mil-map {
             position: absolute;
             top: -25%;
@@ -158,9 +161,69 @@
             -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
             transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
         }
+
         .mil-map-frame .mil-map iframe {
             width: 100%;
             height: 100%;
+        }
+
+        #srabotayblyat,
+        #srabotayblyat * {
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            max-width: 50%;
+            margin: 0 auto;
+            background-color: #f5f7fb;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            margin: 0 auto;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0px;
+            border-radius: 4px;
+            border: 1px solid #dcdcdc;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .form-container input:focus,
+        .form-container textarea:focus {
+            border-color: #1a73e8;
+        }
+
+        .form-container button {
+            background-color: #1a73e8;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            min-width: 90%;
+        }
+
+        .form-container button:hover {
+            background-color: #155ab6;
+        }
+
+        #map {
+            margin-top: 100px;
+            scroll-margin-top: 100px;
+        }
+
+        #email {
+            scroll-margin-top: 150px;
+            /* Adjust this value to be the height of your topbar */
         }
     </style>
 </head>
@@ -181,78 +244,109 @@
         <table>
             <tr>
                 <td>
-                    <div class="service">
-                        <div class="container">
-                            <img src="message.svg" alt="">
+                    <a href="#email">
+                        <div class="service">
+                            <div class="container">
+                                <img src="message.svg" alt="">
+                            </div>
+                            <ul class="content">
+                                <li><span>
+                                        <h3>Email Us</h3>
+                                    </span></li>
+                                <li><span>
+                                        <p>Speak to us</p>
+                                    </span></li>
+                                <li><span>SOMEEMAIL@GMAIL.COM</span></li>
+                            </ul>
                         </div>
-                        <ul class="content">
-                            <li><span>
-                                    <h3>Email Us</h3>
-                                </span></li>
-                            <li><span>
-                                    <p>Speak to us</p>
-                                </span></li>
-                            <li><span><a href="asdsa">SOMEEMAIL@GMAIL.COM</a></span></li>
-                        </ul>
-                    </div>
+                    </a>
                 </td>
                 <td>
-                    <div class="service">
-                        <div class="container">
-                            <img src="message.svg" alt="">
+                    <a href="#map">
+                        <div class="service">
+                            <div class="container">
+                                <img src="message.svg" alt="">
+                            </div>
+                            <ul class="content">
+                                <li><span>
+                                        <h3>Visit Us</h3>
+                                    </span></li>
+                                <li><span>
+                                        <p>Speak to us</p>
+                                    </span></li>
+                                <li><span></span></li>
+                            </ul>
                         </div>
-                        <ul class="content">
-                            <li><span>
-                                    <h3>Visit Us</h3>
-                                </span></li>
-                            <li><span>
-                                    <p>Speak to us</p>
-                                </span></li>
-                            <li><span><a href="asdsa">Place</a></span></li>
-                        </ul>
-                    </div>
+                    </a>
                 </td>
                 <td>
-                    <div class="service">
-                        <div class="container">
-                            <img src="message.svg" alt="">
+                    <a href="tel:+1234567890">
+                        <div class="service">
+                            <div class="container">
+                                <img src="message.svg" alt="">
+                            </div>
+                            <ul class="content">
+                                <li><span>
+                                        <h3>Call Us</h3>
+                                    </span></li>
+                                <li><span>
+                                        <p>Mon-Fri from 8am to 5pm</p>
+                                    </span></li>
+                                <li><span>+1234567890</span></li>
+                            </ul>
                         </div>
-                        <ul class="content">
-                            <li><span>
-                                    <h3>Call Us</h3>
-                                </span></li>
-                            <li><span>
-                                    <p>Mon-Fri from 8am to 5pm</p>
-                                </span></li>
-                            <li><span><a href="asdsa">+1234567890</a></span></li>
-                        </ul>
-                    </div>
+                    </a>
                 </td>
                 <td>
-                    <div class="service">
-                        <div class="container">
-                            <img src="message.svg" alt="">
+                    <a href="https://wa.me/905317750250">
+                        <div class="service">
+                            <div class="container">
+                                <img src="message.svg" alt="">
+                            </div>
+                            <ul class="content">
+                                <li><span>
+                                        <h3>Text Us</h3>
+                                    </span></li>
+                                <li><span>
+                                        <p>WhatsApp</p>
+                                    </span></li>
+                                <li><span>+1234567890</span></li>
+                            </ul>
                         </div>
-                        <ul class="content">
-                            <li><span>
-                                    <h3>Email Us</h3>
-                                </span></li>
-                            <li><span>
-                                    <p>Speak to us</p>
-                                </span></li>
-                            <li><span><a href="asdsa">SOMEEMAIL@GMAIL.COM</a></span></li>
-                        </ul>
-                    </div>
+                    </a>
                 </td>
             </tr>
         </table>
     </section>
-    <div id="box1" class="box" onclick="toggleBox()">SMTH</div>
-    <div id="box2" class="box">TEXT</div>
 
-    <div class="mil-map-frame mil-up">
+    <h1 id="email">Email Us</h1>
+    <div id="srabotayblyat">
+        <div class="form-container">
+            <form action="/submit-form" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                <input type="email" name="email" placeholder="E-mail *" required>
+                <input type="tel" name="phone" placeholder="Phone *" required>
+                <br>
+                <textarea name="comments" placeholder="Comments *" rows="4" required></textarea>
+                <br>
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </div>
+    </div>
+    <!-- <div id="box1" class="box" onclick="toggleBox()">SMTH</div>
+    <div id="box2" class="box">TEXT</div> -->
+
+    <br>
+    <hr>
+    <h1 id="map">Visit Us</h1>
+    <div class="mil-map-frame mil-up" id="map">
         <div class="mil-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.71493642221!2d55.372732283115!3d25.145326620359967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f669ed1b35c09%3A0xccfac1a17b332e57!2sRepton%20School%20Dubai!5e0!3m2!1sen!2sfi!4v1730117587925!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.71493642221!2d55.372732283115!3d25.145326620359967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f669ed1b35c09%3A0xccfac1a17b332e57!2sRepton%20School%20Dubai!5e0!3m2!1sen!2sfi!4v1730117587925!5m2!1sen!2sfi"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 
     <script>
@@ -268,12 +362,12 @@
         }
     </script>
 
-<footer>
-	<div>
-		<p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
-		<a href="#">IDK SOME LINK</a>
-	</div>
-</footer>
+    <footer>
+        <div>
+            <p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
+            <a href="#">IDK SOME LINK</a>
+        </div>
+    </footer>
 </body>
 
 </html>
