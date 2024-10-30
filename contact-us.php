@@ -163,7 +163,10 @@
             color: #dbbf8b;
             font-weight: bold;
             font-size: 50px;
-            padding-top: 20px;
+            padding-top: 30px;
+            width: 450px;
+            margin-right: 100px;
+            text-align: center;
         }
         .dark{
             background-color: #253450;
@@ -172,12 +175,12 @@
             background-image: url('./img/compass.png');
             background-repeat: no-repeat;
             background-size: 800px;
-            background-position: 0px;
+            background-position: 50px;
         }
         #form *{
             font-family: Cormorant Garamond;
             border: none;
-            /* border-bottom: 1px solid #dbbf8b; */
+            border-bottom: 1px solid #dbbf8b;
         }
         .form-container {
             width: 450px;
@@ -198,10 +201,12 @@
             margin: 8px 0px;
             font-size: 16px;
             outline: none;
-            background-color: rgba(255, 255, 255, 1);
+            background-color: rgba(255, 255, 255, 0);
             box-sizing: border-box;
         }
-    
+        ::placeholder{
+            color: rgba(255, 255, 355, 0.7);
+        }
         /* .form-container input:focus,
         .form-container textarea:focus {
             border-color: #dec596;
@@ -209,7 +214,7 @@
 
         .form-container .button {
             background-color: #dec596;
-            color: white;
+            color: #253450;
             font-weight: bold;
             border: none;
             cursor: pointer;
@@ -330,10 +335,10 @@
                 <form action="/submit-form" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
                     <br>
-                    <input type="email" name="email" placeholder="E-mail *" required>
-                    <input type="tel" name="phone" placeholder="Phone *" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
                     <br>
-                    <textarea name="comments" placeholder="Message *" rows="4" required></textarea>
+                    <textarea name="comments" placeholder="Message" rows="4" required></textarea>
                     <br>
                     <input type="button" value="Book Now!" class="button">
                 </form>
