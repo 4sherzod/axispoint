@@ -138,6 +138,7 @@ nav li {
 .dropdown li {
     padding: 10px 15px;
     text-align: center;
+    /* border: 1px solid red; */
 }
 
 .dropdown li a {

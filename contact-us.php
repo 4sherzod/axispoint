@@ -25,7 +25,7 @@
             vertical-align: top;
             border-bottom: none;
             width: 33.33%;
-            height: 300px;
+            height: fit-content;
         }
 
         .service {
@@ -36,7 +36,7 @@
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
-            height: 50%;
+            height: 150px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -52,6 +52,7 @@
         }
 
         .service h3 {
+            color: black;
             font-size: 26px;
             margin-bottom: -15px;
         }
@@ -72,13 +73,6 @@
             margin-top: 50px;
         }
 
-        /* Style for the compass icon */
-        section i {
-            font-size: 80px;
-            color: #dbbf8b;
-            display: block;
-        }
-
         /* Style for the "Contact Us" heading */
         section h1 {
             font-size: 80px;
@@ -88,23 +82,21 @@
         section p {
             font-size: 20px;
         }
-
+        a{
+            color: black;
+        }
         .container {
-            width: 30px;
-            height: 30px;
-            border-radius: 8px;
-            border: 1px solid lightgrey;
-            text-align: center;
+            text-align: left;
             line-height: 42px;
             margin-bottom: 10%;
         }
 
-        .container img {
-            margin: 0 auto;
-            text-align: center;
-            max-width: 70%;
+        .container i{
+            font-size: 30px;
+            padding: 10px 0 0 10px;
+            color: #dbbf8b;
         }
-
+    
         .content {
             height: 60%;
             position: absolute;
@@ -168,20 +160,39 @@
         }
 <<<<<<< HEAD
 
-        #srabotayblyat,
-        #srabotayblyat * {
-            box-sizing: border-box;
+        #emailDiv {
+            background-color: #253450;
+            color: white;
+            padding: 60px 20px;
+            color: #dbbf8b;
+            text-align: center;
         }
-
+        #email{
+            color: #dbbf8b;
+            font-weight: bold;
+            font-size: 50px;
+            padding-top: 20px;
+        }
+        .dark{
+            background-color: #253450;
+        }
+        #compassBack{
+            background-image: url('./img/compass.png');
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-position: 0px;
+        }
+        #form *{
+            font-family: Cormorant Garamond;
+            border: none;
+            border-bottom: 1px solid #dbbf8b;
+        }
         .form-container {
-            max-width: 50%;
+            width: 500px;
             margin: 0 auto;
-            background-color: #f5f7fb;
+            margin-right: 100px;
             justify-content: center;
             align-items: center;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
 
@@ -192,40 +203,35 @@
             width: 100%;
             padding: 12px;
             margin: 8px 0px;
-            border-radius: 4px;
             border: 1px solid #dcdcdc;
             font-size: 16px;
             outline: none;
+            background-color: rgba(255, 255, 255, 1);
         }
 
         .form-container input:focus,
         .form-container textarea:focus {
-            border-color: #1a73e8;
+            border-color: #dec596;
         }
 
         .form-container button {
-            background-color: #1a73e8;
+            background-color: #dec596;
             color: white;
             font-weight: bold;
             border: none;
             cursor: pointer;
             font-size: 18px;
-            min-width: 90%;
+            width: 525px;
         }
 
         .form-container button:hover {
-            background-color: #155ab6;
+            background-color: #dbbf8b;
         }
 
         #map {
-            margin-top: 100px;
             scroll-margin-top: 100px;
         }
-
-        #email {
-            scroll-margin-top: 150px;
-            /* Adjust this value to be the height of your topbar */
-=======
+       
         #comp{
             height: 100px;
 >>>>>>> 7031d0144b83db6a1729134b9d4dab1ab33ae257
@@ -252,7 +258,7 @@
                     <a href="#email">
                         <div class="service">
                             <div class="container">
-                                <img src="message.svg" alt="">
+                                <i class="fa-solid fa-envelope-open-text"></i>
                             </div>
                             <ul class="content">
                                 <li><span>
@@ -261,7 +267,7 @@
                                 <li><span>
                                         <p>Speak to us</p>
                                     </span></li>
-                                <li><span>SOMEEMAIL@GMAIL.COM</span></li>
+                                <li><span>axispoint@gmail.com</span></li>
                             </ul>
                         </div>
                     </a>
@@ -270,7 +276,7 @@
                     <a href="#map">
                         <div class="service">
                             <div class="container">
-                                <img src="message.svg" alt="">
+                                <i class="fa-solid fa-map-location-dot"></i>
                             </div>
                             <ul class="content">
                                 <li><span>
@@ -288,7 +294,7 @@
                     <a href="tel:+1234567890">
                         <div class="service">
                             <div class="container">
-                                <img src="message.svg" alt="">
+                                <i class="fa-solid fa-phone-volume" style="transform: rotate(-45deg);"></i>
                             </div>
                             <ul class="content">
                                 <li><span>
@@ -306,7 +312,7 @@
                     <a href="https://wa.me/905317750250">
                         <div class="service">
                             <div class="container">
-                                <img src="message.svg" alt="">
+                                <i class="fa-brands fa-whatsapp" style="font-size:35px;"></i>
                             </div>
                             <ul class="content">
                                 <li><span>
@@ -324,27 +330,27 @@
         </table>
     </section>
 
-    <h1 id="email">Email Us</h1>
-    <div id="srabotayblyat">
-        <div class="form-container">
-            <form action="/submit-form" method="post">
-                <input type="text" name="name" placeholder="Name">
-                <br>
-                <input type="email" name="email" placeholder="E-mail *" required>
-                <input type="tel" name="phone" placeholder="Phone *" required>
-                <br>
-                <textarea name="comments" placeholder="Comments *" rows="4" required></textarea>
-                <br>
-                <button type="submit">BOOK NOW</button>
-            </form>
+    <div id="emailDiv" class="dark">
+        <div id="compassBack">
+        <h1 id="email">Contact Us</h1>
+            <div class="form-container">
+                <form action="/submit-form" method="post" id="form">
+                    <input type="text" name="name" placeholder="Name">
+                    <br>
+                    <input type="email" name="email" placeholder="E-mail *" required>
+                    <input type="tel" name="phone" placeholder="Phone *" required>
+                    <br>
+                    <textarea name="comments" placeholder="Message *" rows="4" required></textarea>
+                    <br>
+                    <button type="submit">BOOK NOW</button>
+                </form>
+            </div>
         </div>
     </div>
     <!-- <div id="box1" class="box" onclick="toggleBox()">SMTH</div>
     <div id="box2" class="box">TEXT</div> -->
 
-    <br>
-    <hr>
-    <h1 id="map">Visit Us</h1>
+    <!-- <h1 id="map">Visit Us</h1> -->
     <div class="mil-map-frame mil-up" id="map">
         <div class="mil-map">
             <iframe

@@ -38,13 +38,12 @@
             vertical-align: top;
             border-bottom: none;
             width: 33.33%;
-            height: 300px;
+            height: 400px;
         }
 
         .service {
             background-color: #fff;
             padding: 20px;
-            border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             height: 85%;
@@ -57,12 +56,11 @@
         }
 
         .service img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+            object-fit: cover;
+            height: 230px;
+            width: 100%;
             margin-bottom: 15px;
         }
-
         .service h3 {
             font-size: 18px;
             margin-bottom: 10px;
@@ -87,21 +85,21 @@
             <tr>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Company Formation">
+                        <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
                         <h3>Corporate Formation & Administration (UAE)</h3>
                         <p>We make setting up your business hassle-free with expert guidance.</p>
                     </div>
                 </td>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Banking Solutions">
+                        <img src="./img/tax.jpg" alt="Banking Solutions" class="homeImg">
                         <h3>Tax Planning & Offshore Service</h3>
                         <p>Secure the best banking solutions tailored to your business.</p>
                     </div>
                 </td>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Visa Services">
+                        <img src="./img/hr.jpg" alt="Visa Services" class="homeImg">
                         <h3>Human Resources & Recruitment Services</h3>
                         <p>Comprehensive visa solutions for your business and personal needs.</p>
                     </div>
@@ -110,21 +108,21 @@
             <tr>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Accounting & Auditing">
+                        <img src="./img/pass.jpg" alt="Accounting & Auditing" class="homeImg">
                         <h3>Citizenship by Investment & Residency Solutions</h3>
                         <p>Professional accounting and auditing services to ensure financial accuracy.</p>
                     </div>
                 </td>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Office Setup">
+                        <img src="./img/trust.jpg" alt="Office Setup" class="homeImg">
                         <h3>Trust & Fiduciary Services</h3>
                         <p>Get everything in place with our office setup services.</p>
                     </div>
                 </td>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Property Solutions">
+                        <img src="./img/brand.jpg" alt="Property Solutions">
                         <h3>Brand Protection</h3>
                         <p>Find the right commercial or residential property with our experts.</p>
                     </div>
@@ -133,7 +131,7 @@
             <tr>
                 <td>
                     <div class="service">
-                        <img src="image.png" alt="Business Launch Support">
+                        <img src="./img/support.jpg" alt="Business Launch Support">
                         <h3>Business Support & Outsourcing Services</h3>
                         <p>Professional accounting and auditing services to ensure financial accuracy.</p>
                     </div>

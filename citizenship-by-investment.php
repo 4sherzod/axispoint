@@ -20,6 +20,8 @@
 		}
 		#darkImg{
 			padding: 0;
+            margin: 0;
+            height: 400px;
 		}
 		.countryImg{
             /* height: 80px; */
@@ -33,6 +35,7 @@
 			height: fit-content;
 			margin: auto;
 		}
+		h1{padding-top: 30px;}
 	</style>
 </head>
 <body>
@@ -50,6 +53,7 @@
 </section>
 <section class="section1">
 	<!-- <img src="pass.jpg" alt="AxisPoint Logo" width="100%"> -->
+	<h1>Citizenship by Investment</h1>
 	<div>
 		<p>
 			Savory & Partners are trusted by Governments around the world to source individuals of the highest calibre and to successfully process second Citizenship by investment programmes and Residency solutions for them.
@@ -64,6 +68,7 @@
 			Savory & Partners is a Government Approved Citizenship through Investment programs and services Provider, guiding potential applicants to acquire citizenship through investment to avail global reach and become global citizens.
 		</p>
 	</div>
+	<br><br>
 	</section>
 
 <section class="dark-section">

@@ -38,6 +38,9 @@
             /* font-weight: normal; */
             /* margin-bottom: 20px; */
         }
+        h1{
+            line-height: 40px;
+        }
         .companyClass{
             width: 80%;
             margin: 100px auto;
@@ -89,7 +92,7 @@
             <h1>Human Resources & Recruitment Services</h1>
             <p>Starting a business is an exciting venture, but the process of setting up a company can be overwhelming. From legal documentation to compliance with local regulations, every step requires precision and careful planning. At Axis Point, we take the stress out of company formation by offering comprehensive services that cover every aspect of the process. Our expert team ensures that your business is set up smoothly, legally, and efficiently, allowing you to focus on what truly matters—growing your business.</p>
         </div>
-        <div><img src="./img/tax.jpg" alt=""></div>
+        <div><img src="./img/hr.jpg" alt=""></div>
     </div>
     <div>
     <div id="companyInfoDiv" class="companyClass"> 
@@ -149,13 +152,10 @@
             </li>
         </ol>
     </div>
-     <div id="dark-section" class="dark-section">
-         <h2>Why Choose Axis Point for Company Formation?</h2>
-         <p style="width: 66%;margin: 0 auto;">At Axis Point, we understand that each business is unique. Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored approach to company formation ensures your specific needs are met. With years of experience, our team has in-depth knowledge of local and international regulations, making us the ideal partner for businesses looking to establish a presence in various jurisdictions.</p>
 
 <footer>
 	<div>
-		<p>&copy;2024. ACCESSPOINT. All Rights Reserved.</p>
+		<p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
 		<a href="#">IDK SOME LINK</a>
 	</div>
 </footer>
