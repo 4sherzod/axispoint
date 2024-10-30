@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <style>
         .services {
             margin: 40px auto;
@@ -33,7 +33,7 @@
             background-color: #fff;
             padding: 20px;
             padding-top: 10px;
-            border-radius: 10px;
+            /* border-radius: 10px; */
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
             height: 150px;
@@ -43,12 +43,6 @@
         .service:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .service img {
-            height: auto;
-            border-radius: 10px;
-            text-align: left;
         }
 
         .service h3 {
@@ -159,11 +153,9 @@
             height: 100%;
         }
 <<<<<<< HEAD
-
         #emailDiv {
             background-color: #253450;
             color: white;
-            padding: 60px 20px;
             color: #dbbf8b;
             text-align: center;
         }
@@ -185,43 +177,44 @@
         #form *{
             font-family: Cormorant Garamond;
             border: none;
-            border-bottom: 1px solid #dbbf8b;
+            /* border-bottom: 1px solid #dbbf8b; */
         }
         .form-container {
-            width: 500px;
+            width: 450px;
             margin: 0 auto;
             margin-right: 100px;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         .form-container input,
         .form-container textarea,
-        .form-container button {
+        .form-container .button {
             margin: 0 auto;
             width: 100%;
             padding: 12px;
             margin: 8px 0px;
-            border: 1px solid #dcdcdc;
             font-size: 16px;
             outline: none;
             background-color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
         }
-
-        .form-container input:focus,
+    
+        /* .form-container input:focus,
         .form-container textarea:focus {
             border-color: #dec596;
-        }
+        } */
 
-        .form-container button {
+        .form-container .button {
             background-color: #dec596;
             color: white;
             font-weight: bold;
             border: none;
             cursor: pointer;
             font-size: 18px;
-            width: 525px;
+            width: 100%;
         }
 
         .form-container button:hover {
@@ -342,7 +335,7 @@
                     <br>
                     <textarea name="comments" placeholder="Message *" rows="4" required></textarea>
                     <br>
-                    <button type="submit">BOOK NOW</button>
+                    <input type="button" value="Book Now!" class="button">
                 </form>
             </div>
         </div>

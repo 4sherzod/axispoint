@@ -1,5 +1,5 @@
 function getDarkSectionInView() {
-    const darkSections = document.querySelectorAll('.dark-section');
+    const darkSections = document.querySelectorAll('.dark-section , .dark'); 
     const buffer = 70; // Adjust this value for earlier detection //                    <-------- 70 here
 
     for (const section of darkSections) {
