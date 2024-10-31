@@ -54,10 +54,10 @@
 </head>
 <body>
      <?php
-          include_once "load.php";
-          renderLoader();
-          include_once "topbar.php";
-          renderHeader();
+            include_once "load.php";
+            renderLoader();
+            include_once "topbar.php";
+            renderHeader();
             include_once "scrollbar.php";
             $ar = array("companyDiv", "Company Formation", "dark-section", "Why us?", "buttons", "Locations");
             scrollbar($ar);

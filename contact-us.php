@@ -76,21 +76,23 @@
         section p {
             font-size: 20px;
         }
-        a{
+
+        a {
             color: black;
         }
+
         .container {
             text-align: left;
             line-height: 42px;
             margin-bottom: 10%;
         }
 
-        .container i{
+        .container i {
             font-size: 30px;
             padding: 10px 0 0 10px;
             color: #dbbf8b;
         }
-    
+
         .content {
             height: 60%;
             position: absolute;
@@ -152,14 +154,15 @@
             width: 100%;
             height: 100%;
         }
-<<<<<<< HEAD
-        #emailDiv {
+
+        <<<<<<< HEAD #emailDiv {
             background-color: #253450;
             color: white;
             color: #dbbf8b;
             text-align: center;
         }
-        #email{
+
+        #email {
             color: #dbbf8b;
             font-weight: bold;
             font-size: 50px;
@@ -168,20 +171,24 @@
             margin-right: 100px;
             text-align: center;
         }
-        .dark{
+
+        .dark {
             background-color: #253450;
         }
-        #compassBack{
+
+        #compassBack {
             background-image: url('./img/compass.png');
             background-repeat: no-repeat;
             background-size: 800px;
             background-position: 50px;
         }
-        #form *{
+
+        #form * {
             font-family: Cormorant Garamond;
             border: none;
             border-bottom: 1px solid #dbbf8b;
         }
+
         .form-container {
             width: 450px;
             margin: 0 auto;
@@ -204,9 +211,11 @@
             background-color: rgba(255, 255, 255, 0);
             box-sizing: border-box;
         }
-        ::placeholder{
+
+        ::placeholder {
             color: rgba(255, 255, 355, 0.7);
         }
+
         /* .form-container input:focus,
         .form-container textarea:focus {
             border-color: #dec596;
@@ -229,10 +238,10 @@
         #map {
             scroll-margin-top: 100px;
         }
-       
-        #comp{
+
+        #comp {
             height: 100px;
->>>>>>> 7031d0144b83db6a1729134b9d4dab1ab33ae257
+            >>>>>>>7031d0144b83db6a1729134b9d4dab1ab33ae257
         }
     </style>
 </head>
@@ -328,9 +337,9 @@
         </table>
     </section>
 
-    <div id="emailDiv" class="dark">
+    <div id="emailDiv" class="dark nav-item">
         <div id="compassBack">
-        <h1 id="email">Contact Us</h1>
+            <h1 id="email">Contact Us</h1>
             <div class="form-container">
                 <form action="/submit-form" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
@@ -349,7 +358,7 @@
     <div id="box2" class="box">TEXT</div> -->
 
     <!-- <h1 id="map">Visit Us</h1> -->
-    <div class="mil-map-frame mil-up" id="map">
+    <div class="mil-map-frame mil-up nav-item" id="map">
         <div class="mil-map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.71493642221!2d55.372732283115!3d25.145326620359967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f669ed1b35c09%3A0xccfac1a17b332e57!2sRepton%20School%20Dubai!5e0!3m2!1sen!2sfi!4v1730117587925!5m2!1sen!2sfi"
@@ -368,7 +377,23 @@
             } else {
                 box2.style.display = "none"; // Hide box2
             }
-        }
+        } document.addEventListener("DOMContentLoaded", () => {
+            // Select all anchor tags that have href pointing to an element on the page
+            const navLinks = document.querySelectorAll("a[href^='#']");
+            navLinks.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const yOffset = -150; // Offset in pixels for fixed headers, if any
+                        const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({ top: yPosition, behavior: "smooth" });
+                    }
+                });
+            });
+        });
     </script>
 
     <footer>
