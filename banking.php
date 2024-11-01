@@ -50,6 +50,11 @@
         ol>li{
             padding: 10px;
         }
+        .asd{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 80px;
+        }
     </style>
 </head>
 <body>
@@ -177,6 +182,11 @@
             </div>
         </div>
     </section>
+    <div>
+        <br>
+    <h1>Sample Text</h1>
+    <p class="asd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aspernatur earum assumenda est fugit a voluptas beatae expedita pariatur dolor. Labore quas fugit asperiores odit, est laborum cupiditate voluptas voluptatum?</p>
+</div>
 
     <script>
         function showText(textId, buttonId) {
@@ -197,6 +207,9 @@
             selectedButton.classList.add('active');
         }
     </script>
-
+    <?php
+         include_once "footer.php";
+         renderFooter();
+    ?>
 </body>
 </html>

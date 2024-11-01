@@ -158,6 +158,7 @@
 
         <<<<<<< HEAD #emailDiv {
             background-color: #253450;
+        }
 =======
 <<<<<<< HEAD
         #emailDiv {
@@ -345,13 +346,8 @@
 
     <div id="emailDiv" class="dark nav-item">
         <div id="compassBack">
-<<<<<<< Updated upstream
-            <h1 id="email">Contact Us</h1>
-            <div class="form-container">
-=======
         <h1 id="email" class="dark">Contact Us</h1>
             <div class="form-container" class="dark">
->>>>>>> Stashed changes
                 <form action="/submit-form" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
                     <br>
@@ -407,12 +403,10 @@
         });
     </script>
 
-    <footer>
-        <div>
-            <p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
-            <a href="#">IDK SOME LINK</a>
-        </div>
-    </footer>
+    <?php
+         include_once "footer.php";
+         renderFooter();
+    ?>
 </body>
 
 </html>

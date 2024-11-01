@@ -127,12 +127,9 @@
 
 </section>
 
-<footer>
-	<div>
-		<p>&copy;2024. AXISPOINT. All Rights Reserved.</p>
-		<a href="#">IDK SOME LINK</a>
-	</div>
-</footer>
-
+<?php
+         include_once "footer.php";
+         renderFooter();
+?>
 </body>
 </html>

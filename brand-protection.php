@@ -217,12 +217,10 @@
           </div>
 
 
-          <footer>
-               <div>
-                    <p>&copy;2024. ACCESSPOINT. All Rights Reserved.</p>
-                    <a href="#">IDK SOME LINK</a>
-               </div>
-          </footer>
+          <?php
+         include_once "footer.php";
+         renderFooter();
+          ?>
 
 </body>
 
