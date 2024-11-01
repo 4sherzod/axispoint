@@ -108,7 +108,7 @@ function scrollbar($array) {
                         
                         // Scroll to the target element with a 200px offset
                         if (targetElement) {
-                            const yOffset = -150; // Offset in pixels
+                            const yOffset = -180; // Offset in pixels
                             const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
                             window.scrollTo({ top: yPosition, behavior: "smooth" });
                         }
