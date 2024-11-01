@@ -154,9 +154,14 @@
             width: 100%;
             height: 100%;
         }
+<<<<<<< Updated upstream
 
         <<<<<<< HEAD #emailDiv {
             background-color: #253450;
+=======
+<<<<<<< HEAD
+        #emailDiv {
+>>>>>>> Stashed changes
             color: white;
             color: #dbbf8b;
             text-align: center;
@@ -197,6 +202,7 @@
             align-items: center;
             padding: 20px;
             box-sizing: border-box;
+            background-color: #253450;
         }
 
         .form-container input,
@@ -339,8 +345,13 @@
 
     <div id="emailDiv" class="dark nav-item">
         <div id="compassBack">
+<<<<<<< Updated upstream
             <h1 id="email">Contact Us</h1>
             <div class="form-container">
+=======
+        <h1 id="email" class="dark">Contact Us</h1>
+            <div class="form-container" class="dark">
+>>>>>>> Stashed changes
                 <form action="/submit-form" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
                     <br>

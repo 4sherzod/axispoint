@@ -156,7 +156,7 @@
                 <td>
                     <a href="banking.php">
                         <div class="service">
-                            <img src="image.png" alt="Citizenship by Investment">
+                            <img src="./img/handshake.jpg" alt="Citizenship by Investment">
                             <h3>Banking Solutions</h3>
                             <p>Secure second citizenship through global investment programs for enhanced mobility.</p>
                         </div>
@@ -165,7 +165,7 @@
                 <td>
                     <a href="concierge.php">
                         <div class="service">
-                            <img src="image.png" alt="UAE Tax Residence">
+                            <img src="./img/concierge.jpg" alt="UAE Tax Residence">
                             <h3>Concierge Services</h3>
                             <p>Expert solutions for obtaining UAE tax residence for businesses.</p>
                         </div>

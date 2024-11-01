@@ -35,7 +35,7 @@ function renderHeader() {
                         <li><a href="trust-and-fiduciary-services.php">Trust & Fiduciary Services</a></li>
                         <li><a href="brand-protection.php">Brand Protection</a></li>
                         <li><a href="business-support.php">Business Support & Outsourcing Services</a></li>
-                        <li><a href="banking.php">Banking Solution</a></li>
+                        <li><a href="banking.php">Banking Solutions</a></li>
                         <li><a href="concierge.php">Concierge Services</a></li>
                     </ul>
                 </li>
