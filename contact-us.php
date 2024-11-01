@@ -236,6 +236,7 @@
             cursor: pointer;
             font-size: 18px;
             width: 100%;
+            border-radius: 20px 0 20px 0;
         }
 
         .form-container button:hover {

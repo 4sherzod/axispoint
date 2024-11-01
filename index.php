@@ -73,6 +73,66 @@
         a {
             text-decoration: none;
         }
+        p{
+            font-size: 20px;
+        }
+        #companyDiv{
+            display: flex;
+            gap: calc(10%);
+            /* border: 1px solid blue; */
+        }
+        #companyDiv>div{
+            width: 45%;
+            /* border: 1px solid red; */
+        }
+        #companyDiv>div>img{
+            margin: auto;
+            /* width: 100%; */
+            object-fit: cover;
+            height: 330px;
+            width: 500px;
+            margin-right: 0;
+        }
+        .companyClass h1, .companyClass{
+            text-align: left;
+            /* font-weight: normal; */
+            /* margin-bottom: 20px; */
+        }
+        .companyClass{
+            width: 80%;
+            margin: 100px auto;
+            line-height: 30px;
+        }
+        #plswork{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .btn{
+            width: 70%;
+            margin-top: 100px;
+            padding: 15px 20px;
+            background-color: #dbbf8b;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-family: Cormorant Garamond;
+            font-weight: bold;
+            border-radius: 20px 0 20px 0;
+        }
+        .btn i{
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        .left>h1{
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            background-image: url('./img/compass.png');
+            background-repeat: no-repeat;
+            background-size: 70px;
+            background-position: 72% 2%;
+        }
+
     </style>
 </head>
 
@@ -83,6 +143,16 @@
     include_once "topbar.php";
     renderHeader();
     ?>
+     <div id="companyDiv" class="companyClass sectionforbar">
+        <div class="left"> 
+            <h1>Shaping Your Business Future</h1>
+            <p>Axis Point offers tailored business setup and immigration consultancy solutions, guiding you step by step to ensure your business success across various global markets</p>
+            <div id="plswork">
+                <a id='btn' class="btn" href="services.php">EXPLORE OUR SERVICES <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div><img src="./img/handshake.jpg" alt=""></div>
+    </div>
     <section class="services">
         <table>
             <tr>
