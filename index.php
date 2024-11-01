@@ -80,6 +80,7 @@
             display: flex;
             gap: calc(10%);
             /* border: 1px solid blue; */
+            width: 1150px;
         }
         #companyDiv>div{
             width: 45%;
@@ -112,6 +113,8 @@
             margin-top: 100px;
             padding: 15px 20px;
             background-color: #dbbf8b;
+            /* background-color: #253450; */
+            /* color: #dbbf8b; */
             color: white;
             border: none;
             font-size: 20px;
