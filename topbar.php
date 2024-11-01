@@ -46,5 +46,3 @@ function renderHeader() {
     <div id="emptyspace"></div>
     ';
 }
-
-?>
