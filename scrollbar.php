@@ -77,7 +77,7 @@ function scrollbar($array) {
                 const options = {
                     root: null, // viewport
                     rootMargin: "-80px 0px 0px 0px", // Adjusting for 100px offset
-                    threshold: [0.5] // Trigger when section is in view
+                    threshold: [0.8] // Trigger when section is in view
                 };
 
                 // Create an intersection observer
