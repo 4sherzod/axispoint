@@ -117,28 +117,6 @@ h1 {
      border-bottom: 1px solid #dbbf8b;
      padding: 10px;
 }
-footer {
-     background-color: #253450;
-     color: white;
-}
-
-footer p, footer a {
-     margin: 0;
-}
-
-footer a {
-     color: #dbbf8b;
-     text-decoration: none;
-}
-footer div {
-     margin: 0 auto;
-     max-width: 80%;
-     text-align: center;
-     padding: 20px;
-     display: flex;
-     justify-content: space-between; /* Align items to opposite corners */
-     align-items: center;
-}
 .last{ 
      max-width: 350px;
 }
@@ -160,6 +138,3 @@ footer div {
      text-align: center;
 }
 
-footer{
-     height: 150px;
-}
