@@ -40,7 +40,7 @@
         }
         .companyClass{
             width: 80%;
-            margin: 100px auto;
+            margin: 30px auto;
             line-height: 30px;
         }
         ol>li{
@@ -81,6 +81,7 @@
           renderHeader();
     
      ?>
+     <br><br>
     <div id="companyDiv" class="companyClass sectionforbar">
         <div> 
             <h1>Concierge services</h1>
@@ -88,8 +89,9 @@
         </div>
         <div><img src="./img/concierge.jpg" alt=""></div>
     </div>
-    <div>
+    <!-- <div style="height:1px; width:700px; margin: auto; background-color: #dbbf8b;"></div> -->
     <div id="companyInfoDiv" class="companyClass"> 
+        <h2 style="font-size:30px;line-height:50px;">Types of Services</h2>
     <ol>
         <li>
             <p>

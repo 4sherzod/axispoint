@@ -87,6 +87,9 @@ h1 {
      color: #dbbf8b;
      text-align: center;
 }
+.dark{
+     background-color: #253450;
+}
 .dark-section h2 {
      /* margin: 0 auto; */
      margin-bottom: 30px;

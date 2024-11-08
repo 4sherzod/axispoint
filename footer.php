@@ -14,7 +14,7 @@ function renderFooter() {
         padding: 0;
         margin-left: 60px;
         text-align: left;
-        width: 130px;
+        width: 170px;
         height: 150px;
         /* border: 1px solid red; */
     }
@@ -87,13 +87,13 @@ function renderFooter() {
     </div>
     <div>
         <h2>Quick Info</h2>
-        <a href="#" class="hover-link">Home</a>
+        <a href="#" class="hover-link">+123456789</a>
         <br>
-        <a href="#" class="hover-link">About Us</a>
+        <a href="#" class="hover-link">axispoint@gmail.com</a>
         <br>
-        <a href="#" class="hover-link">Services</a>
+        <a href="#" class="hover-link">Nad Al Sheba 3</a>
         <br>
-        <a href="#" class="hover-link">Contact Us</a>
+        <a href="#" class="hover-link">Repton School Dubai</a>
     </div>
     <div style="margin-left: auto; margin-top: 57px; margin-right: 150px; width: auto; height: auto">
         <h2 style=" margin-bottom: 10px">Follow Us: </h2>

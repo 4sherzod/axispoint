@@ -108,24 +108,38 @@
             width: 100%;
             margin-top: 40px;
         }
-        .btn{
-            width: 70%;
-            margin-top: 100px;
+        .btn {
+            width: 250px;
             padding: 15px 20px;
             background-color: #dbbf8b;
-            /* background-color: #253450; */
-            /* color: #dbbf8b; */
             color: white;
             border: none;
             font-size: 20px;
-            font-family: Cormorant Garamond;
+            font-family: 'Cormorant Garamond', serif;
             font-weight: bold;
             border-radius: 20px 0 20px 0;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth color change */
         }
-        .btn i{
+
+        .btn i {
             font-size: 15px;
             margin-left: 5px;
+            transition: transform 0.3s ease; /* Smooth transition for arrow */
         }
+
+        /* Change background and animate the arrow on hover */
+        .btn:hover {
+            background-color: #c5ab7d;
+        }
+
+        /* Slide arrow to the right */
+        .btn:hover i {
+            transform: translateX(7px); /* Adjust value to control slide distance */
+        }
+
         .left>h1{
             font-size: 60px;
             font-weight: bold;
@@ -134,6 +148,12 @@
             background-repeat: no-repeat;
             background-size: 70px;
             background-position: 72% 2%;
+        }
+        #desc {
+            width: 450px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
         }
 
     </style>
@@ -156,6 +176,15 @@
         </div>
         <div><img src="./img/handshake.jpg" alt=""></div>
     </div>
+    
+    <div style="height:1px; width:700px; margin: auto; background-color: #dbbf8b;"></div>
+        <br>
+        <h1 style="font-weight:bold;">What We Offer</h1>
+        <p id="desc">From company formation to visa services, Axis Point provides end-to-end solutions for all your business
+            needs.</p>
+        <br>
+        <div style="height:1px; width:300px; margin: auto; background-color: #dbbf8b;"></div>
+        <br> <br>
     <section class="services">
         <table>
             <tr>
