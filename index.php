@@ -61,6 +61,7 @@
             width: 100%;
             margin-bottom: 15px;
         }
+
         .service h3 {
             font-size: 18px;
             margin-bottom: 10px;
@@ -70,23 +71,28 @@
             font-size: 14px;
             color: #666;
         }
+
         a {
             text-decoration: none;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
-        #companyDiv{
+
+        #companyDiv {
             display: flex;
             gap: calc(10%);
             /* border: 1px solid blue; */
             width: 1150px;
         }
-        #companyDiv>div{
+
+        #companyDiv>div {
             width: 45%;
             /* border: 1px solid red; */
         }
-        #companyDiv>div>img{
+
+        #companyDiv>div>img {
             margin: auto;
             /* width: 100%; */
             object-fit: cover;
@@ -94,22 +100,28 @@
             width: 500px;
             margin-right: 0;
         }
-        .companyClass h1, .companyClass{
+
+        .companyClass h1,
+        .companyClass {
             text-align: left;
             /* font-weight: normal; */
             /* margin-bottom: 20px; */
         }
-        .companyClass{
+
+        .companyClass {
             width: 80%;
             margin: 100px auto;
             line-height: 30px;
         }
-        #plswork{
+
+        #plswork {
             width: 100%;
             margin-top: 40px;
         }
+
         .btn {
-            width: 250px;
+            width: 70%;
+            margin-top: 100px;
             padding: 15px 20px;
             background-color: #dbbf8b;
             color: white;
@@ -156,6 +168,79 @@
             font-size: 18px;
         }
 
+        .serviceextended {
+            padding: 50px 0px;
+        }
+
+        .serviceextended a {
+            display: inline-block;
+            background-color: #dbbf8b;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .serviceextended a:hover,
+        .btn:hover {
+            background-color: #b29d76;
+            transform: translateY(-2px);
+        }
+
+        .serviceextended p {
+            width: 40%;
+        }
+
+        .serviceextended h1 {
+            text-decoration: solid;
+            margin-bottom: 50px;
+        }
+
+        .serviceextended div {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .serviceextended img {
+            height: 270px;
+            width: 480px;
+        }
+
+        .darker {
+            background-color: #f7fdff;
+            text-align: right;
+        }
+
+        @keyframes fadeInBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .appear-from-bottom {
+            opacity: 0;
+            animation: fadeInBottom 1s ease forwards;
+        }
+
+        .appear {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -166,12 +251,14 @@
     include_once "topbar.php";
     renderHeader();
     ?>
-     <div id="companyDiv" class="companyClass sectionforbar">
-        <div class="left"> 
+    <div id="companyDiv" class="companyClass sectionforbar">
+        <div class="left">
             <h1>Shaping Your Business Future</h1>
-            <p>Axis Point offers tailored business setup and immigration consultancy solutions, guiding you step by step to ensure your business success across various global markets</p>
+            <p>Axis Point offers tailored business setup and immigration consultancy solutions, guiding you step by step
+                to ensure your business success across various global markets</p>
             <div id="plswork">
-                <a id='btn' class="btn" href="services.php">EXPLORE OUR SERVICES <i class="fa-solid fa-arrow-right"></i></a>
+                <a id='btn' class="btn" href="services.php">EXPLORE OUR SERVICES <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
         <div><img src="./img/handshake.jpg" alt=""></div>
@@ -276,10 +363,122 @@
             </tr>
         </table>
     </section>
+
+    <div>
+        <div id="formation" class="serviceextended">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+            </div>
+        </div>
+        <div id="formation" class="serviceextended darker">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+        <div id="formation" class="serviceextended">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+            </div>
+        </div>
+        <div id="formation" class="serviceextended darker">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+        <div id="formation" class="serviceextended">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+            </div>
+        </div>
+        <div id="formation" class="serviceextended darker">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
+                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
+                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
+                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
+                    <br>
+                    <br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <?php
-         include_once "footer.php";
-         renderFooter();
+    include_once "footer.php";
+    renderFooter();
     ?>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elementsToAnimate = document.querySelectorAll(".service, .serviceextended");
+
+            function checkVisibility() {
+                elementsToAnimate.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 50) {
+                        element.classList.add("appear-from-bottom");
+                    }
+                });
+            }
+
+            // Run on scroll and on load
+            window.addEventListener("scroll", checkVisibility);
+            checkVisibility(); // Initial check
+        });
+    </script>
 </body>
 
 </html>

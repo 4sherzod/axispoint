@@ -154,15 +154,10 @@
             width: 100%;
             height: 100%;
         }
-<<<<<<< Updated upstream
-
-        <<<<<<< HEAD #emailDiv {
+        #emailDiv {
             background-color: #253450;
         }
-=======
-<<<<<<< HEAD
         #emailDiv {
->>>>>>> Stashed changes
             color: white;
             color: #dbbf8b;
             text-align: center;
@@ -249,7 +244,12 @@
 
         #comp {
             height: 100px;
-            >>>>>>>7031d0144b83db6a1729134b9d4dab1ab33ae257
+        }
+        form input, textarea {
+            color: white;
+
+            font-size: 20px !important;
+            font-weight: bold !important;
         }
     </style>
 </head>
