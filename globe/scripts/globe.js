@@ -55,6 +55,8 @@ class Globe {
       transparent: true,
     })
 
+    // shaderMaterial.uniforms.texture.value.color.set(0xff0000); // Set to red
+
     return shaderMaterial;
   }
 

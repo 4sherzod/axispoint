@@ -1,6 +1,6 @@
 class Dots {
 	constructor() {
-		this.total = config.dots.total;
+		this.total = config.dots.total * 2;
 
 		groups.lineDots = new THREE.Group();
 		groups.lineDots.name = 'LineDots';
@@ -26,7 +26,7 @@ class Dot {
 		this.geometry = new THREE.SphereGeometry(this.radius, this.segments, this.rings);
 		this.material = new THREE.MeshBasicMaterial({color: config.colors.globeLinesDots});
 		this.material.transparent = true;
-		this.material.opacity = 0.65;
+		this.material.opacity = 1;
 
 		this.mesh = new THREE.Mesh(this.geometry, this.material);
 		this.mesh.visible = false;
@@ -57,7 +57,7 @@ class Dot {
 
 			const {x, y, z} = this._path[this._pathIndex];
 			this.mesh.position.set(x, y, z);
-			this._pathIndex++;
+			this._pathIndex+=0.2;
 		} else {
 			this.mesh.visible = false;
 			this._path = null;

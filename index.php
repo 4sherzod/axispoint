@@ -82,24 +82,32 @@
 
         #companyDiv {
             display: flex;
-            gap: calc(10%);
+            /* gap: calc(10%); */
             /* border: 1px solid blue; */
-            width: 1150px;
+            background-color: #253450;
+            width: 100%;
+    
         }
-
-        #companyDiv>div {
-            width: 45%;
+        .left{
+            margin-left: 150px;
+            color: white;
+            width: 1000px;
+            padding-top: 100px;
             /* border: 1px solid red; */
         }
+        #companyDiv>div {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-        #companyDiv>div>img {
+        /* #companyDiv>div>img {
             margin: auto;
-            /* width: 100%; */
+            /* width: 100%; 
             object-fit: cover;
             height: 330px;
             width: 500px;
             margin-right: 0;
-        }
+        } */
 
         .companyClass h1,
         .companyClass {
@@ -110,7 +118,7 @@
 
         .companyClass {
             width: 80%;
-            margin: 100px auto;
+            margin: auto;
             line-height: 30px;
         }
 
@@ -120,8 +128,8 @@
         }
 
         .btn {
-            width: 70%;
-            margin-top: 100px;
+            width: 50%;
+            /* margin-top: 100px; */
             padding: 15px 20px;
             background-color: #dbbf8b;
             color: white;
@@ -205,7 +213,7 @@
 
         .serviceextended div {
             display: flex;
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
             align-items: center;
             justify-content: space-between;
@@ -214,10 +222,13 @@
         .serviceextended img {
             height: 270px;
             width: 480px;
+            object-fit: cover;
         }
 
         .darker {
             background-color: #f7fdff;
+            /* background-color: rgba(37, 52, 80, 0.2); */
+            /* background-color: #fbf8f3; */
             text-align: right;
         }
 
@@ -241,6 +252,12 @@
         .appear {
             opacity: 1;
         }
+        #globe-container{
+            height:600px;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
     </style>
 </head>
 
@@ -251,7 +268,7 @@
     include_once "topbar.php";
     renderHeader();
     ?>
-    <div id="companyDiv" class="companyClass sectionforbar">
+    <div id="companyDiv" class="companyClass sectionforbar dark">
         <div class="left">
             <h1>Shaping Your Business Future</h1>
             <p>Axis Point offers tailored business setup and immigration consultancy solutions, guiding you step by step
@@ -261,9 +278,11 @@
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
-        <div><img src="./img/handshake.jpg" alt=""></div>
+        <div id="globe-container">
+        <iframe src="globe.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        </div>
     </div>
-    
+    <br>
     <div style="height:1px; width:700px; margin: auto; background-color: #dbbf8b;"></div>
         <br>
         <h1 style="font-weight:bold;">What We Offer</h1>
@@ -272,190 +291,109 @@
         <br>
         <div style="height:1px; width:300px; margin: auto; background-color: #dbbf8b;"></div>
         <br> <br>
-    <section class="services">
-        <table>
-            <tr>
-                <td>
-                    <a href="Corporate-Formation-&-Administration.php">
-                        <div class="service">
-                            <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-                            <h3>Corporate Formation & Administration (UAE)</h3>
-                            <p>We make setting up your business hassle-free with expert guidance.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="tax-planning.php">
-                        <div class="service">
-                            <img src="./img/tax.jpg" alt="Banking Solutions" class="homeImg">
-                            <h3>Tax Planning & Offshore Service</h3>
-                            <p>Secure the best banking solutions tailored to your business.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="hr.php">
-                        <div class="service">
-                            <img src="./img/hr.jpg" alt="Visa Services" class="homeImg">
-                            <h3>Human Resources & Recruitment Services</h3>
-                            <p>Comprehensive visa solutions for your business and personal needs.</p>
-                        </div>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="citizenship-by-investment.php">
-                        <div class="service">
-                            <img src="./img/pass.jpg" alt="Accounting & Auditing" class="homeImg">
-                            <h3>Citizenship by Investment & Residency Solutions</h3>
-                            <p>Professional accounting and auditing services to ensure financial accuracy.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="trust-and-fiduciary-services.php">
-                        <div class="service">
-                            <img src="./img/trust.jpg" alt="Office Setup" class="homeImg">
-                            <h3>Trust & Fiduciary Services</h3>
-                            <p>Get everything in place with our office setup services.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="brand-protection.php">
-                        <div class="service">
-                            <img src="./img/brand.jpg" alt="Property Solutions">
-                            <h3>Brand Protection</h3>
-                            <p>Find the right commercial or residential property with our experts.</p>
-                        </div>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="business-support.php">
-                        <div class="service">
-                            <img src="./img/support.jpg" alt="Business Launch Support">
-                            <h3>Business Support & Outsourcing Services</h3>
-                            <p>Professional accounting and auditing services to ensure financial accuracy.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="banking.php">
-                        <div class="service">
-                            <img src="./img/handshake.jpg" alt="Citizenship by Investment">
-                            <h3>Banking Solutions</h3>
-                            <p>Secure second citizenship through global investment programs for enhanced mobility.</p>
-                        </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="concierge.php">
-                        <div class="service">
-                            <img src="./img/concierge.jpg" alt="UAE Tax Residence">
-                            <h3>Concierge Services</h3>
-                            <p>Expert solutions for obtaining UAE tax residence for businesses.</p>
-                        </div>
-                    </a>
-                </td>
-            </tr>
-        </table>
-    </section>
 
-    <div>
-        <div id="formation" class="serviceextended">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-            </div>
-        </div>
-        <div id="formation" class="serviceextended darker">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-            </div>
-        </div>
-        <div id="formation" class="serviceextended">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-            </div>
-        </div>
-        <div id="formation" class="serviceextended darker">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-            </div>
-        </div>
-        <div id="formation" class="serviceextended">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-            </div>
-        </div>
-        <div id="formation" class="serviceextended darker">
-            <h1>Corporate Formation & Administration (UAE)</h1>
-            <div>
-                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis facilis repudiandae rerum,
-                    dignissimos quibusdam repellendus cumque voluptatem deleniti aperiam dicta impedit architecto sint
-                    quod magni quisquam illum amet corporis. Asperiores!Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Aut error voluptatibus beatae minus. Rerum enim aperiam tenetur veniam! Quaerat
-                    dolores perferendis voluptatum labore delectus? Quidem illo fuga nobis beatae dignissimos?
-                    <br>
-                    <br>
-                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-                </p>
-            </div>
+
+
+        <div>
+    <div class="serviceextended">
+        <h1>Corporate Formation & Administration (UAE)</h1>
+        <div>
+            <p>We make setting up your business hassle-free with expert guidance.
+                <br><br>
+                <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+            </p>
+            <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
         </div>
     </div>
+
+    <div class="serviceextended darker">
+        <h1>Tax Planning & Offshore Service</h1>
+        <div>
+            <img src="./img/tax.jpg" alt="Tax Planning" class="homeImg">
+            <p>Secure the best banking solutions tailored to your business.
+                <br><br>
+                <a href="tax-planning.php">More Info...</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="serviceextended">
+        <h1>Human Resources & Recruitment Services</h1>
+        <div>
+            <p>Comprehensive visa solutions for your business and personal needs.
+                <br><br>
+                <a href="hr.php">More Info...</a>
+            </p>
+            <img src="./img/hr.jpg" alt="Human Resources" class="homeImg">
+        </div>
+    </div>
+
+    <div class="serviceextended darker">
+        <h1>Citizenship by Investment & Residency Solutions</h1>
+        <div>
+            <img src="./img/pass.jpg" alt="Residency Solutions" class="homeImg">
+            <p>Secure second citizenship through global investment programs for enhanced mobility.
+                <br><br>
+                <a href="citizenship-by-investment.php">More Info...</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="serviceextended">
+        <h1>Trust & Fiduciary Services</h1>
+        <div>
+            <p>Get everything in place with our office setup services.
+                <br><br>
+                <a href="trust-and-fiduciary-services.php">More Info...</a>
+            </p>
+            <img src="./img/trust.jpg" alt="Trust Services" class="homeImg">
+        </div>
+    </div>
+
+    <div class="serviceextended darker">
+        <h1>Brand Protection</h1>
+        <div>
+            <img src="./img/brand.jpg" alt="Brand Protection" class="homeImg">
+            <p>Find the right commercial or residential property with our experts.
+                <br><br>
+                <a href="brand-protection.php">More Info...</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="serviceextended">
+        <h1>Business Support & Outsourcing Services</h1>
+        <div>
+            <p>Professional accounting and auditing services to ensure financial accuracy.
+                <br><br>
+                <a href="business-support.php">More Info...</a>
+            </p>
+            <img src="./img/support.jpg" alt="Business Support" class="homeImg">
+        </div>
+    </div>
+
+    <div class="serviceextended darker">
+        <h1>Banking Solutions</h1>
+        <div>
+            <img src="./img/handshake.jpg" alt="Banking Solutions" class="homeImg">
+            <p>Secure second citizenship through global investment programs for enhanced mobility.
+                <br><br>
+                <a href="banking.php">More Info...</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="serviceextended">
+        <h1>Concierge Services</h1>
+        <div>
+            <p>Expert solutions for obtaining UAE tax residence for businesses.
+                <br><br>
+                <a href="concierge.php">More Info...</a>
+            </p>
+            <img src="./img/concierge.jpg" alt="Concierge Services" class="homeImg">
+        </div>
+    </div>
+</div>
 
     <?php
     include_once "footer.php";

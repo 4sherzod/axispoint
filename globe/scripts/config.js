@@ -8,30 +8,30 @@ const config = {
 		globeDotSize: 2
 	},
 	scale: {
-		points: 0.025,
+		points: 0.4,
 		markers: 0.025,
-		globeScale: 1
+		globeScale: 0
 	},
 	rotation: {
 		globe: 0.001
 	},
 	colors: {
-		globeDotColor: 'rgb(203, 0, 0)',
-		globeMarkerColor: 'rgb(143, 216, 216)',
-		globeMarkerGlow: 'rgb(255, 255, 255)',
+		globeDotColor: 'rgb(219, 191, 139)', //the gold we have dbbf8b
+		globeMarkerColor: 'rgb(143, 216, 216)', //37,52,80 253450 blue
+		globeMarkerGlow: 'rgb(37, 52, 255)',
 		globeLines: 'rgb(255, 255, 255)',
 		globeLinesDots: 'rgb(255, 255, 255)'
 	},
 	display: {
 		points: true,
 		map: true,
-		lines: true,
+		lines: false,
 		markers: false,
 		markerLabel: false,
 		markerPoint: false
 	},
 	dots: {
-		total: 30
+		total: 300
 	}
 }
 

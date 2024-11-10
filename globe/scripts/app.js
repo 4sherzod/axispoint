@@ -27,7 +27,7 @@ class App {
 
   initRenderer = () => {
     this.renderer = new THREE.WebGLRenderer({alpha: true});
-    this.renderer.setClearColor(0x000000, 1.0);
+    this.renderer.setClearColor(0x253450, 1.0); //main backgorund color 253450
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio * 1.5);
     this.renderer.shadowMap.enabled = true;
@@ -43,7 +43,11 @@ class App {
 
   initControls = () => {
     this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.enableZoom = false;  // Correct reference to class property
+    this.controls.enablePan = true;   // Allow panning if needed
+    this.controls.enableRotate = true; // Allow rotation if needed
   }
+  
 
   initStats = () => {
     this.stats = new Stats();
