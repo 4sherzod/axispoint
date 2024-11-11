@@ -347,25 +347,19 @@
 
     <div id="emailDiv" class="dark nav-item">
         <div id="compassBack">
-        <h1 id="email" class="dark">Contact Us</h1>
+            <h1 id="email" class="dark">Contact Us</h1>
             <div class="form-container" class="dark">
                 <form action="/submit-form" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
-                    <br>
                     <input type="email" name="email" placeholder="E-mail" required>
                     <input type="tel" name="phone" placeholder="Phone" required>
-                    <br>
                     <textarea name="comments" placeholder="Message" rows="4" required></textarea>
-                    <br>
                     <input type="button" value="Book Now!" class="button">
                 </form>
             </div>
         </div>
     </div>
-    <!-- <div id="box1" class="box" onclick="toggleBox()">SMTH</div>
-    <div id="box2" class="box">TEXT</div> -->
 
-    <!-- <h1 id="map">Visit Us</h1> -->
     <div class="mil-map-frame mil-up nav-item" id="map">
         <div class="mil-map">
             <iframe
@@ -376,28 +370,21 @@
     </div>
 
     <script>
-        function toggleBox() {
-            const box2 = document.getElementById('box2');
-
-            // Toggle the display property between none and flex
-            if (box2.style.display === "none") {
-                box2.style.display = "flex"; // Show box2
-            } else {
-                box2.style.display = "none"; // Hide box2
-            }
-        } document.addEventListener("DOMContentLoaded", () => {
-            // Select all anchor tags that have href pointing to an element on the page
+        document.addEventListener("DOMContentLoaded", () => {
             const navLinks = document.querySelectorAll("a[href^='#']");
             navLinks.forEach(link => {
                 link.addEventListener("click", (event) => {
                     event.preventDefault();
-                    const targetI   d = link.getAttribute("href").substring(1);
+                    const targetId = link.getAttribute("href").substring(1);
                     const targetElement = document.getElementById(targetId);
 
                     if (targetElement) {
-                        const yOffset = -150; // Offset in pixels for fixed headers, if any
+                        const yOffset = -100; // Adjust offset if needed
                         const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                        window.scrollTo({ top: yPosition, behavior: "smooth" });
+                        window.scrollTo({
+                            top: yPosition,
+                            behavior: "smooth"
+                        });
                     }
                 });
             });
@@ -405,8 +392,8 @@
     </script>
 
     <?php
-         include_once "footer.php";
-         renderFooter();
+        include_once "footer.php";
+        renderFooter();
     ?>
 </body>
 

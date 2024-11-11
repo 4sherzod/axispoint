@@ -45,7 +45,7 @@ class App {
     this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableZoom = false;  // Correct reference to class property
     this.controls.enablePan = false;   // Allow panning if needed
-    this.controls.enableRotate = false; // Allow rotation if needed 
+    this.controls.enableRotate = true; // Allow rotation if needed
   }
   
 
