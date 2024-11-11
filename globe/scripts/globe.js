@@ -40,7 +40,7 @@ class Globe {
 
   createGlobeMaterial() {
     const texture = loader.load('null')
-    console.log(texture)
+    // console.log(texture)
 
     const shaderMaterial = new THREE.ShaderMaterial({
       uniforms: {texture: { value:  texture }},

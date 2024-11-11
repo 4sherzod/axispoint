@@ -22,11 +22,9 @@ window.addEventListener("scroll", function() {
 
     // Check if we have a dark-section currently visible
     if (darkSection) {
-        console.log('dark');
         header.classList.remove("scrolled");
         dropdown.classList.remove("scrolled");
     } else {
-        console.log('white');
         header.classList.add("scrolled");
         dropdown.classList.add("scrolled");
     }

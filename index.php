@@ -85,29 +85,32 @@
             /* gap: calc(10%); */
             /* border: 1px solid blue; */
             background-color: #253450;
-            width: 100%;
-    
+            min-width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
         }
-        .left{
+
+        .left {
             margin-left: 150px;
             color: white;
             width: 1000px;
             padding-top: 100px;
             /* border: 1px solid red; */
         }
+
         #companyDiv>div {
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
         /* #companyDiv>div>img {
-            margin: auto;
-            /* width: 100%; 
-            object-fit: cover;
-            height: 330px;
-            width: 500px;
-            margin-right: 0;
-        } */
+                margin: auto;
+                /* width: 100%; 
+                object-fit: cover;
+                height: 330px;
+                width: 500px;
+                margin-right: 0;
+            } */
 
         .companyClass h1,
         .companyClass {
@@ -141,13 +144,15 @@
             display: inline-flex;
             align-items: center;
             cursor: pointer;
-            transition: background-color 0.3s ease; /* Smooth color change */
+            transition: background-color 0.3s ease;
+            /* Smooth color change */
         }
 
         .btn i {
             font-size: 15px;
             margin-left: 5px;
-            transition: transform 0.3s ease; /* Smooth transition for arrow */
+            transition: transform 0.3s ease;
+            /* Smooth transition for arrow */
         }
 
         /* Change background and animate the arrow on hover */
@@ -157,10 +162,11 @@
 
         /* Slide arrow to the right */
         .btn:hover i {
-            transform: translateX(7px); /* Adjust value to control slide distance */
+            transform: translateX(7px);
+            /* Adjust value to control slide distance */
         }
 
-        .left>h1{
+        .left>h1 {
             font-size: 60px;
             font-weight: bold;
             line-height: 60px;
@@ -169,6 +175,7 @@
             background-size: 70px;
             background-position: 72% 2%;
         }
+
         #desc {
             width: 450px;
             margin: auto;
@@ -252,11 +259,19 @@
         .appear {
             opacity: 1;
         }
-        #globe-container{
-            height:600px;
+
+        #globe-container {
+            height: 600px;
             width: 100%;
             overflow: hidden;
             margin: 0;
+        }
+
+        #globe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -278,122 +293,123 @@
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
-        <div id="globe-container">
-        <iframe src="globe.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        <div id="globe-container" style=" text-align: left">
+            <iframe src="globe.html" frameborder="0" style="width: 100%; height: 100%; overflow: hidden;"
+                scrolling="no"></iframe>
         </div>
     </div>
     <br>
     <div style="height:1px; width:700px; margin: auto; background-color: #dbbf8b;"></div>
-        <br>
-        <h1 style="font-weight:bold;">What We Offer</h1>
-        <p id="desc">From company formation to visa services, Axis Point provides end-to-end solutions for all your business
-            needs.</p>
-        <br>
-        <div style="height:1px; width:300px; margin: auto; background-color: #dbbf8b;"></div>
-        <br> <br>
+    <br>
+    <h1 style="font-weight:bold;">What We Offer</h1>
+    <p id="desc">From company formation to visa services, Axis Point provides end-to-end solutions for all your business
+        needs.</p>
+    <br>
+    <div style="height:1px; width:300px; margin: auto; background-color: #dbbf8b;"></div>
+    <br> <br>
 
 
 
-        <div>
-    <div class="serviceextended">
-        <h1>Corporate Formation & Administration (UAE)</h1>
-        <div>
-            <p>We make setting up your business hassle-free with expert guidance.
-                <br><br>
-                <a href="Corporate-Formation-&-Administration.php">More Info...</a>
-            </p>
-            <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+    <div>
+        <div class="serviceextended">
+            <h1>Corporate Formation & Administration (UAE)</h1>
+            <div>
+                <p>We make setting up your business hassle-free with expert guidance.
+                    <br><br>
+                    <a href="Corporate-Formation-&-Administration.php">More Info...</a>
+                </p>
+                <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
+            </div>
+        </div>
+
+        <div class="serviceextended darker">
+            <h1>Tax Planning & Offshore Service</h1>
+            <div>
+                <img src="./img/tax.jpg" alt="Tax Planning" class="homeImg">
+                <p>Secure the best banking solutions tailored to your business.
+                    <br><br>
+                    <a href="tax-planning.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="serviceextended">
+            <h1>Human Resources & Recruitment Services</h1>
+            <div>
+                <p>Comprehensive visa solutions for your business and personal needs.
+                    <br><br>
+                    <a href="hr.php">More Info...</a>
+                </p>
+                <img src="./img/hr.jpg" alt="Human Resources" class="homeImg">
+            </div>
+        </div>
+
+        <div class="serviceextended darker">
+            <h1>Citizenship by Investment & Residency Solutions</h1>
+            <div>
+                <img src="./img/pass.jpg" alt="Residency Solutions" class="homeImg">
+                <p>Secure second citizenship through global investment programs for enhanced mobility.
+                    <br><br>
+                    <a href="citizenship-by-investment.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="serviceextended">
+            <h1>Trust & Fiduciary Services</h1>
+            <div>
+                <p>Get everything in place with our office setup services.
+                    <br><br>
+                    <a href="trust-and-fiduciary-services.php">More Info...</a>
+                </p>
+                <img src="./img/trust.jpg" alt="Trust Services" class="homeImg">
+            </div>
+        </div>
+
+        <div class="serviceextended darker">
+            <h1>Brand Protection</h1>
+            <div>
+                <img src="./img/brand.jpg" alt="Brand Protection" class="homeImg">
+                <p>Find the right commercial or residential property with our experts.
+                    <br><br>
+                    <a href="brand-protection.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="serviceextended">
+            <h1>Business Support & Outsourcing Services</h1>
+            <div>
+                <p>Professional accounting and auditing services to ensure financial accuracy.
+                    <br><br>
+                    <a href="business-support.php">More Info...</a>
+                </p>
+                <img src="./img/support.jpg" alt="Business Support" class="homeImg">
+            </div>
+        </div>
+
+        <div class="serviceextended darker">
+            <h1>Banking Solutions</h1>
+            <div>
+                <img src="./img/handshake.jpg" alt="Banking Solutions" class="homeImg">
+                <p>Secure second citizenship through global investment programs for enhanced mobility.
+                    <br><br>
+                    <a href="banking.php">More Info...</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="serviceextended">
+            <h1>Concierge Services</h1>
+            <div>
+                <p>Expert solutions for obtaining UAE tax residence for businesses.
+                    <br><br>
+                    <a href="concierge.php">More Info...</a>
+                </p>
+                <img src="./img/concierge.jpg" alt="Concierge Services" class="homeImg">
+            </div>
         </div>
     </div>
-
-    <div class="serviceextended darker">
-        <h1>Tax Planning & Offshore Service</h1>
-        <div>
-            <img src="./img/tax.jpg" alt="Tax Planning" class="homeImg">
-            <p>Secure the best banking solutions tailored to your business.
-                <br><br>
-                <a href="tax-planning.php">More Info...</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="serviceextended">
-        <h1>Human Resources & Recruitment Services</h1>
-        <div>
-            <p>Comprehensive visa solutions for your business and personal needs.
-                <br><br>
-                <a href="hr.php">More Info...</a>
-            </p>
-            <img src="./img/hr.jpg" alt="Human Resources" class="homeImg">
-        </div>
-    </div>
-
-    <div class="serviceextended darker">
-        <h1>Citizenship by Investment & Residency Solutions</h1>
-        <div>
-            <img src="./img/pass.jpg" alt="Residency Solutions" class="homeImg">
-            <p>Secure second citizenship through global investment programs for enhanced mobility.
-                <br><br>
-                <a href="citizenship-by-investment.php">More Info...</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="serviceextended">
-        <h1>Trust & Fiduciary Services</h1>
-        <div>
-            <p>Get everything in place with our office setup services.
-                <br><br>
-                <a href="trust-and-fiduciary-services.php">More Info...</a>
-            </p>
-            <img src="./img/trust.jpg" alt="Trust Services" class="homeImg">
-        </div>
-    </div>
-
-    <div class="serviceextended darker">
-        <h1>Brand Protection</h1>
-        <div>
-            <img src="./img/brand.jpg" alt="Brand Protection" class="homeImg">
-            <p>Find the right commercial or residential property with our experts.
-                <br><br>
-                <a href="brand-protection.php">More Info...</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="serviceextended">
-        <h1>Business Support & Outsourcing Services</h1>
-        <div>
-            <p>Professional accounting and auditing services to ensure financial accuracy.
-                <br><br>
-                <a href="business-support.php">More Info...</a>
-            </p>
-            <img src="./img/support.jpg" alt="Business Support" class="homeImg">
-        </div>
-    </div>
-
-    <div class="serviceextended darker">
-        <h1>Banking Solutions</h1>
-        <div>
-            <img src="./img/handshake.jpg" alt="Banking Solutions" class="homeImg">
-            <p>Secure second citizenship through global investment programs for enhanced mobility.
-                <br><br>
-                <a href="banking.php">More Info...</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="serviceextended">
-        <h1>Concierge Services</h1>
-        <div>
-            <p>Expert solutions for obtaining UAE tax residence for businesses.
-                <br><br>
-                <a href="concierge.php">More Info...</a>
-            </p>
-            <img src="./img/concierge.jpg" alt="Concierge Services" class="homeImg">
-        </div>
-    </div>
-</div>
 
     <?php
     include_once "footer.php";
