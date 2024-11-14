@@ -70,6 +70,11 @@
             margin: auto;
             margin-bottom: 50px;
         }
+
+        .displayText {
+            line-height: 1.6;
+            width: 900px;
+        }
     </style>
 </head>
 
@@ -218,31 +223,44 @@
         <div id="text1" class="displayText active">
             <h1>Mainland</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam porro, tempora aliquam,
-                voluptate dolores beatae obcaecati architecto harum error nam magni itaque possimus, cumque quis
-                blanditiis quos tempore sit ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa esse
-                excepturi deserunt, ut tenetur aspernatur consequuntur, facilis quidem reprehenderit quisquam
-                consectetur fugiat doloribus, porro veniam illo autem! Suscipit, totam quis.
+                Establishing a business in the UAE mainland requires a comprehensive understanding of the local market,
+                and the team at Axis Point is here to provide expert support every step of the way! With extensive
+                experience in UAE company formation, we help businesses set up within the UAE mainland, enabling
+                unrestricted trade both locally and internationally.
+                At Axis Point, our core services include mainland business registration, obtaining trade licenses,
+                managing PRO services, and handling visa processes. As a reliable business formation consultant in
+                Dubai, we ensure efficient processing of all paperwork and approvals required for business
+                incorporation, fully compliant with UAE regulations.
             </p>
         </div>
         <div id="text2" class="displayText">
             <h1>Freezone</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam porro, tempora aliquam,
-                voluptate dolores beatae obcaecati architecto harum error nam magni itaque possimus, cumque quis
-                blanditiis quos tempore sit ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                accusantium architecto beatae necessitatibus autem. Omnis eos eaque delectus molestias doloremque
-                officiis facere ducimus fugiat quae expedita laudantium labore, commodi tempore.
+            <p>For overseas investors, setting up an offshore business in the UAE is one of the most attractive options
+                due to the exceptional tax benefits. While many countries offer privacy to high-net-worth individuals,
+                Dubai stands out as a premier and secure tax haven, implementing stringent policies to protect the
+                confidentiality of offshore clients' information from their home countries.
+
+                By establishing an offshore company in Dubai, you gain the status of a recognized local business, with
+                easy access to markets across the Middle East. With extensive experience, Axis Point, a leading business
+                setup firm in Dubai, provides expert guidance on offshore company formation. Our specialized solutions
+                assist foreign investors in making the right choices for setting up a business in the UAE.
             </p>
         </div>
         <div id="text3" class="displayText">
             <h1>Virtual Office Solutions</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam porro, tempora aliquam,
-                voluptate dolores beatae obcaecati architecto harum error nam magni itaque possimus, cumque quis
-                blanditiis quos tempore sit ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-                nam sint rerum, ducimus, autem distinctio reiciendis veniam repellat esse eius nihil aut inventore
-                aspernatur a dolore ab doloribus. Eligendi, molestiae.
+            <p>For businesses looking to establish a professional presence in the UAE without the need for a physical
+                office, virtual office solutions offer the ideal choice. This setup allows companies to benefit from a
+                prestigious business address in Dubai, helping to enhance their credibility and image in the local and
+                international markets.
+
+                With a virtual office, businesses can maintain a local presence in the UAE, access mail handling and
+                reception services, and benefit from flexible meeting spaces when needed. Virtual office solutions are
+                perfect for startups, freelancers, and international businesses looking to expand into the UAE without
+                the overhead costs associated with a traditional office.
+
+                Axis Point provides tailored virtual office solutions in Dubai, designed to meet the diverse needs of
+                modern businesses. With our comprehensive services, we ensure a smooth and professional setup, allowing
+                you to focus on your business growth while enjoying the advantages of a local UAE presence.
             </p>
         </div>
     </div>

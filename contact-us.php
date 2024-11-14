@@ -389,6 +389,8 @@
                 });
             });
         });
+        const element = document.getElementById("email");
+    console.log("Width: " + element.offsetWidth + "px");
     </script>
 
     <?php

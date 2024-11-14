@@ -105,71 +105,62 @@
      <div id="companyDiv" class="companyClass">
           <div>
                <h1>Brand Protection</h1>
-               <p>Starting a business is an exciting venture, but the process of setting up a company can be
-                    overwhelming. From legal documentation to compliance with local regulations, every step requires
-                    precision and careful planning. At Axis Point, we take the stress out of company formation by
-                    offering comprehensive services that cover every aspect of the process. Our expert team ensures that
-                    your business is set up smoothly, legally, and efficiently, allowing you to focus on what truly
-                    matters—growing your business.</p>
+               <p>Securing your brand’s identity and intellectual property is vital in today’s competitive market. At
+                    Axis Point, we provide comprehensive brand protection services that shield your assets and ensure
+                    your unique ideas remain secure. Our experienced team manages every step—from legal documentation to
+                    compliance—allowing you to focus on growth without the burden of brand management challenges.</p>
           </div>
-          <div><img src="./img/fingerprint.jpg" alt=""></div>
+          <div><img src="./img/fingerprint.jpg" alt="Brand Protection"></div>
      </div>
      <div>
           <div id="companyInfoDiv" class="companyClass">
                <h2>Trademark & Patent Registration</h2>
-               <p>At Axis Point, we understand that each business is unique. Whether you’re a startup, an established
-                    company looking to expand, or an entrepreneur seeking opportunities in a new market, our tailored
-                    approach to company formation ensures your specific needs are met. With years of experience, our
-                    team has in-depth knowledge of local and international regulations, making us the ideal partner for
-                    businesses looking to establish a presence in various jurisdictions.</p>
+               <p>Axis Point’s trademark and patent registration services are designed for businesses of all sizes, from
+                    startups to global enterprises. We understand the nuances of local and international intellectual
+                    property regulations and provide tailored solutions to protect your innovations and brand identity.
+                    Our team will help you navigate the complexities of trademark and patent registration, ensuring your
+                    intellectual assets are safeguarded.</p>
                <br>
-               <h2>Our Company Formation Process</h2>
-               <p>Our company formation services cover everything from initial consultation to the final registration of
-                    your business. Here’s a step-by-step look at how we make the process seamless:</p>
+               <h2>Our Brand Protection Process</h2>
+               <p>Our streamlined process covers every stage, from consultation to securing your brand’s rights. Here’s
+                    how we assist:</p>
                <ol>
                     <li>
                          <p>
-                              <b>Offshore Company Formation</b><br>
-                              We begin by understanding your business goals, industry, and target market. During this
-                              phase, our consultants will discuss various jurisdiction options, helping you choose the
-                              most favorable location for your business based on factors such as tax benefits, legal
-                              requirements, and operational costs.
+                              <b>Trademark Assessment & Strategy</b><br>
+                              We begin by assessing your brand’s unique aspects and identifying potential risks. Our
+                              experts create a strategy tailored to your business needs, helping you establish a robust
+                              trademark presence.
                          </p>
                     </li>
                     <li>
                          <p>
-                              <b>Offshore Trusts & Foundations</b><br>
-                              Choosing the right jurisdiction is crucial to the success of your business. Whether you’re
-                              setting up in the UAE, Europe, or Asia, we provide expert advice on the best location
-                              based on your industry and objectives. We specialize in free zone, mainland, and offshore
-                              company formations, ensuring flexibility and tailored solutions.
+                              <b>Patent Consultation & Filing</b><br>
+                              Protecting your inventions is essential for sustained growth. We offer patent consultation
+                              to determine the best approach, and assist in filing patents in relevant jurisdictions for
+                              maximum security.
                          </p>
                     </li>
                     <li>
                          <p>
-                              <b>International Tax Structuring</b><br>
-                              Selecting the appropriate business structure is vital for your operations. We help you
-                              choose from options such as sole proprietorship, limited liability company (LLC), branch
-                              office, or subsidiary. Our legal team ensures that the chosen structure aligns with your
-                              long-term business goals and complies with all relevant regulations.
+                              <b>International IP Structuring</b><br>
+                              Expanding into global markets requires an efficient IP structure. Our team advises on
+                              international structuring to ensure your brand is protected wherever you do business.
                          </p>
                     </li>
                     <li>
                          <p>
-                              <b>Double Taxation Treaty Advisory</b><br>
-                              Our experienced team handles all necessary paperwork, including drafting the Memorandum of
-                              Association, Articles of Incorporation, and shareholder agreements. We take care of the
-                              submission process, ensuring that all documents meet local regulatory requirements. With
-                              Axis Point, you won’t have to worry about missing deadlines or incorrect filings.
+                              <b>Brand Monitoring & Enforcement</b><br>
+                              We continuously monitor your brand for potential infringements and handle enforcement to
+                              prevent unauthorized use. Our proactive approach ensures that your brand remains secure.
                          </p>
                     </li>
                     <li>
                          <p>
-                              <b>Business Licensing and Permits</b><br>
-                              Depending on the nature of your business, you may require specific licenses or permits to
-                              operate legally. Our team ensures that all the necessary licenses—whether general trade,
-                              industrial, or professional—are obtained promptly, allowing your business to start
-                              operations as soon as possible.
+                              <b>IP Licensing & Contracts</b><br>
+                              For businesses looking to license their brand, we assist with IP licensing and contract
+                              management. Our services ensure clear, legally sound agreements that protect your rights
+                              and revenue.
                          </p>
                     </li>
                </ol>
@@ -177,49 +168,36 @@
           <div id="dark-section" class="dark-section">
                <h2>Copyright Registration & Management</h2>
                <div style="display: flex; width: 80%; margin: 0 auto; gap: 20px;">
-                    <!-- Adjusted gap for better spacing -->
-                    <p style="flex: 1; margin: 0;"> <!-- Ensures each <p> takes equal space -->
-                         At Axis Point, we understand that each business is unique.
-                         Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking
-                         opportunities in a new market, our tailored approach to company formation ensures your specific
-                         needs are met. With years of experience, our team has in-depth knowledge of local and
-                         international regulations, making us the ideal partner for businesses looking to establish a
-                         presence in various jurisdictions.
+                    <p style="flex: 1; margin: 0;">
+                         Protecting creative works is a crucial part of safeguarding your business's intellectual
+                         assets. Our copyright registration and management services ensure your work is secured from
+                         unauthorized use. Whether it’s digital content, designs, or written material, Axis Point helps
+                         you retain full control over your creations.
                     </p>
-                    <p style="flex: 1; margin: 0;"> <!-- Also set to flex: 1 for equal width -->
-                         At Axis Point, we understand that each business is unique.
-                         Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking
-                         opportunities in a new market, our tailored approach to company formation ensures your specific
-                         needs are met. With years of experience, our team has in-depth knowledge of local and
-                         international regulations, making us the ideal partner for businesses looking to establish a
-                         presence in various jurisdictions.
+                    <p style="flex: 1; margin: 0;">
+                         From registration to enforcement, our team guides you through every aspect of copyright
+                         management. We align our services with your business goals, providing continuous support to
+                         keep your creative assets safe from potential infringements.
                     </p>
                </div>
                <div style="display: flex; width: 80%; margin: 50px auto; gap: 20px;">
-                    <!-- Adjusted gap for better spacing -->
-                    <p style="flex: 1; margin: 0;"> <!-- Ensures each <p> takes equal space -->
-                         At Axis Point, we understand that each business is unique.
-                         Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking
-                         opportunities in a new market, our tailored approach to company formation ensures your specific
-                         needs are met. With years of experience, our team has in-depth knowledge of local and
-                         international regulations, making us the ideal partner for businesses looking to establish a
-                         presence in various jurisdictions.
+                    <p style="flex: 1; margin: 0;">
+                         Our proactive approach to copyright management includes monitoring and enforcement, giving you
+                         peace of mind in the digital age. With Axis Point, your creative works remain protected,
+                         enabling you to leverage them for long-term growth and profitability.
                     </p>
-                    <p style="flex: 1; margin: 0;"> <!-- Also set to flex: 1 for equal width -->
-                         At Axis Point, we understand that each business is unique.
-                         Whether you’re a startup, an established company looking to expand, or an entrepreneur seeking
-                         opportunities in a new market, our tailored approach to company formation ensures your specific
-                         needs are met. With years of experience, our team has in-depth knowledge of local and
-                         international regulations, making us the ideal partner for businesses looking to establish a
-                         presence in various jurisdictions.
+                    <p style="flex: 1; margin: 0;">
+                         We work closely with you to customize our copyright solutions, adapting to the specific needs
+                         of your industry and brand. Our services help you maximize the value of your intellectual
+                         property while minimizing risk.
                     </p>
                </div>
           </div>
 
 
           <?php
-         include_once "footer.php";
-         renderFooter();
+          include_once "footer.php";
+          renderFooter();
           ?>
 
 </body>
