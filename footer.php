@@ -87,9 +87,9 @@ function renderFooter() {
     </div>
     <div>
         <h2>Quick Info</h2>
-        <a href="#" class="hover-link">+123456789</a>
+        <a href="#" class="hover-link">+971 4 558 0736</a>
         <br>
-        <a href="#" class="hover-link">axispoint@gmail.com</a>
+        <a href="#" class="hover-link">contact@axispoint.me</a>
         <br>
         <a href="#" class="hover-link">Nad Al Sheba 3</a>
         <br>

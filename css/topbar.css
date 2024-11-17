@@ -16,12 +16,11 @@ header {
     align-items: center;
     padding: 20px;
     background-color: white; /* Default background color */
-    /* border-bottom: 1px solid lightgrey; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2000;
+    z-index: 2000; /* Ensure header is on top */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 40px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
@@ -43,34 +42,25 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    left: 0;
     width: 80%;
     margin: 0 auto;
 }
-
 
 #title {
     font-size: 25px;
     font-weight: lighter;
     color: #dbbf8b;
     line-height: 50px;
-    /* border: 1px solid green; */
     display: flex;
     width: 200px;
     gap: 7px;
-    /* font-family: 'RoyalExquisite', serif; */
 }
 
-#title i {
-    font-size: 25px;
-}
 #logo{
     width: 40px;
-    /* border: 1px solid red; */
-    margin: auto;
 }
-#logo>img{
+
+#logo img {
     width: 100%;
 }
 
@@ -137,8 +127,6 @@ nav li {
 
 .dropdown li {
     padding: 10px 15px;
-    text-align: center;
-    /* border: 1px solid red; */
 }
 
 .dropdown li a {
@@ -161,19 +149,17 @@ nav li {
     border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-
 #emptyspace {
     height: 80px;
     background-color: white;
 }
 
-
 /* Scroll-activated Styles */
-header.scrolled{
+header.scrolled {
     background-color: #253450 !important; /* Navy blue */
 }
 
-.dropdown.scrolled{
+.dropdown.scrolled {
     background-color: #253450 !important;
 }
 
@@ -183,4 +169,66 @@ header.scrolled nav a {
 
 header.scrolled #title {
     color: #dbbf8b !important;
+}
+
+/* Mobile Menu Styles */
+#mobile-menu {
+    display: none; /* Hide by default */
+    font-size: 28px;
+    cursor: pointer;
+    color: #dbbf8b;
+    position: fixed;
+    width: fit-content;
+    right: 50px;
+    
+}
+
+/* Initially hide the mobile nav */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color:white; /* Dark overlay */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 4000; /* Ensure it's in front of everything */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Show the mobile nav when active */
+.mobile-nav.active {
+    display: block;
+    transform: translateX(0);
+}
+
+/* Style for mobile menu links */
+.mobile-nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.mobile-nav a:hover {
+    background-color: #f4f4f4;
+    color: #b28e50;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 900px) {
+    /* Hide the normal menu on mobile */
+    header nav {
+        display: none;
+    }
+
+    /* Show the hamburger icon on mobile */
+    #mobile-menu {
+        display: block;
+    }
 }

@@ -1,0 +1,267 @@
+main {
+    padding: 40px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.services {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: none;
+    table-layout: fixed;
+}
+
+td {
+    padding: 30px 20px;
+    vertical-align: top;
+    border-bottom: none;
+    width: 33.33%;
+    height: 400px;
+}
+
+.service {
+    background-color: #fff;
+    /* padding: 20px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 600px;
+    /* border-bottom: 5px solid #dbbf8b; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    object-fit: cover;
+    height: 230px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 35px;
+    margin: 10px 30px 20px 30px;
+}
+
+.service p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 30px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+#companyDiv {
+    display: flex;
+    /* gap: calc(10%); */
+    /* border: 1px solid blue; */
+    background-color: #253450;
+    width: 100%;
+    height: 91vh;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+#companyDiv>div {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    height: 100%;
+}
+.left {
+    margin-left: 150px;
+    color: white;
+    width: 1000px;
+    /* padding-top: 100px; */
+    /* border: 1px solid red; */
+    height: fit-content;
+    align-items: center;
+    display: flex;
+}
+
+#leftText{
+    /* border: 1px solid green; */
+    height: fit-content;
+    margin: auto;
+}
+#leftText>h1>img{
+    height: 100px;
+}
+/* #companyDiv>div>img {
+        margin: auto;
+        /* width: 100%; 
+        object-fit: cover;
+        height: 330px;
+        width: 500px;
+        margin-right: 0;
+    } */
+.companyClass h1,
+.companyClass {
+    text-align: left;
+    /* font-weight: normal; */
+    /* margin-bottom: 20px; */
+}
+
+.companyClass {
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+}
+
+#plswork {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.btn {
+    width: 50%;
+    /* margin-top: 100px; */
+    padding: 15px 20px;
+    background-color: #dbbf8b;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    border-radius: 20px 0 20px 0;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth color change */
+}
+
+.btn i {
+    font-size: 15px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    /* Smooth transition for arrow */
+}
+
+/* Change background and animate the arrow on hover */
+.btn:hover {
+    background-color: #c5ab7d;
+}
+
+/* Slide arrow to the right */
+.btn:hover i {
+    transform: translateX(7px);
+    /* Adjust value to control slide distance */
+}
+
+
+
+#desc {
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.serviceextended {
+    padding: 50px 0px;
+}
+
+.serviceextended a {
+    display: inline-block;
+    background-color: #dbbf8b;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.serviceextended a:hover,
+.btn:hover {
+    background-color: #b29d76;
+    transform: translateY(-2px);
+}
+
+.serviceextended p {
+    width: 40%;
+}
+
+.serviceextended h1 {
+    text-decoration: solid;
+    margin-bottom: 50px;
+}
+
+.serviceextended div {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serviceextended img {
+    height: 270px;
+    width: 480px;
+    object-fit: cover;
+}
+
+.darker {
+    background-color: #f7fdff;
+    /* background-color: rgba(37, 52, 80, 0.2); */
+    /* background-color: #fbf8f3; */
+    text-align: right;
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.appear-from-bottom {
+    opacity: 0;
+    animation: fadeInBottom 1s ease forwards;
+}
+
+.appear {
+    opacity: 1;
+}
+
+#globe-container {
+    /* height: 50vh; */
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    /* margin-right: 20px; */
+}
+
+#globe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}

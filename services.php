@@ -15,76 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
-    <style>
-        main {
-            padding: 40px;
-        }
-
-        .services {
-            margin: 0 auto;
-            width: 100%;
-            max-width: 1200px;
-            text-decoration: none;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border-bottom: none;
-            table-layout: fixed;
-        }
-
-        td {
-            padding: 15px;
-            vertical-align: top;
-            border-bottom: none;
-            width: 33.33%;
-            height: 400px;
-        }
-
-        .service {
-            text-decoration: none;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            height: 85%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-
-        .service:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .service img {
-            object-fit: cover;
-            height: 230px;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-
-        .service h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 14px;
-            color: #666;
-        }
-
-        #desc {
-            width: 450px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -95,9 +26,17 @@
     renderHeader();
     ?>
     <br>
-    <h1 style="font-weight:bold;">What We Offer</h1>
+    <!-- <h1 style="font-weight:bold;">What We Offer</h1>
+    <p id="desc">From company formation to visa services, Axis Point provides end-to-end solutions for all your business
+        needs.</p> -->
+        <br>
+    <div style="height:1px; width:150px; margin: auto; background-color: #dbbf8b;"></div>
+    <br>
+    <h1 style="font-weight:bold;">Explore Our Services</h1>
     <p id="desc">From company formation to visa services, Axis Point provides end-to-end solutions for all your business
         needs.</p>
+    <br>
+    <div style="height:1px; width:150px; margin: auto; background-color: #dbbf8b;"></div>
     <br>
     <section class="services">
         <table>
@@ -107,7 +46,8 @@
                         <div class="service">
                             <img src="./img/handshake.jpg" alt="Company Formation" class="homeImg">
                             <h3>Corporate Formation & Administration (UAE)</h3>
-                            <p>We make setting up your business hassle-free with expert guidance.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Axis Point offers expert business solutions, including company formation, legal compliance, tax registration, visa assistance, and financial services. Whether you're starting a new venture or expanding globally, our tailored approach ensures a seamless setup and ongoing support for your business success.</p>
                         </div>
                     </a>
                 </td>
@@ -116,7 +56,8 @@
                         <div class="service">
                             <img src="./img/tax.jpg" alt="Banking Solutions" class="homeImg">
                             <h3>Tax Planning & Offshore Service</h3>
-                            <p>Secure the best banking solutions tailored to your business.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>We provide expert tax planning and offshore solutions, including company formation, trusts, and international tax structuring. Our services help businesses optimize profits, protect assets, and stay compliant with global standards. Operating in key locations like Singapore, Hong Kong, and the UK, we assist with offshore setups, banking solutions, and double taxation advisory.</p>
                         </div>
                     </a>
                 </td>
@@ -125,7 +66,8 @@
                         <div class="service">
                             <img src="./img/hr.jpg" alt="Visa Services" class="homeImg">
                             <h3>Human Resources & Recruitment Services</h3>
-                            <p>Comprehensive visa solutions for your business and personal needs.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Talent acquisition, recruitment, HR outsourcing, payroll administration, employee benefits, training, performance management, executive search, headhunting, and expatriate services, including work permits and visas, all tailored to build efficient, compliant teams and support employee growth.</p>
                         </div>
                     </a>
                 </td>
@@ -136,7 +78,8 @@
                         <div class="service">
                             <img src="./img/pass.jpg" alt="Accounting & Auditing" class="homeImg">
                             <h3>Citizenship by Investment & Residency Solutions</h3>
-                            <p>Professional accounting and auditing services to ensure financial accuracy.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Citizenship by investment programs, due diligence for investment migration, and real estate investment advisory are offered to provide tailored residency and citizenship solutions. These services help individuals secure new opportunities while ensuring compliance and strategic investments for long-term benefits.</p>
                         </div>
                     </a>
                 </td>
@@ -145,7 +88,8 @@
                         <div class="service">
                             <img src="./img/trust.jpg" alt="Office Setup" class="homeImg">
                             <h3>Trust & Fiduciary Services</h3>
-                            <p>Get everything in place with our office setup services.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Trust formation and management, trustee and fiduciary services, wealth structuring and succession planning, family office services, private wealth management advisory, and foundation setup and administration are provided to help individuals and families protect and grow their assets, ensuring long-term financial security and a smooth transition of wealth across generations.</p>
                         </div>
                     </a>
                 </td>
@@ -154,7 +98,8 @@
                         <div class="service">
                             <img src="./img/brand.jpg" alt="Property Solutions">
                             <h3>Brand Protection</h3>
-                            <p>Find the right commercial or residential property with our experts.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Brand protection services include trademark and patent registration, along with copyright registration and management, to safeguard intellectual property and ensure long-term legal protection for your brand and creative works.</p>
                         </div>
                     </a>
                 </td>
@@ -165,7 +110,8 @@
                         <div class="service">
                             <img src="./img/support.jpg" alt="Business Launch Support">
                             <h3>Business Support & Outsourcing Services</h3>
-                            <p>Professional accounting and auditing services to ensure financial accuracy.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Business support and outsourcing services include IT support and solutions, document management and archiving, procurement services, and business process outsourcing (BPO), all designed to enhance operational efficiency and streamline business functions.</p>
                         </div>
                     </a>
                 </td>
@@ -174,7 +120,8 @@
                         <div class="service">
                             <img src="./img/banking.jpg" alt="Citizenship by Investment">
                             <h3>Banking Solutions</h3>
-                            <p>Secure second citizenship through global investment programs for enhanced mobility.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Banking solutions include business and personal accounts, business finance, trade finance, TWC, mortgages, and auto finance. These services provide comprehensive financial support, helping businesses manage operations and individuals achieve personal financial goals with flexibility and security.</p>
                         </div>
                     </a>
                 </td>
@@ -183,7 +130,8 @@
                         <div class="service">
                             <img src="./img/concierge.jpg" alt="UAE Tax Residence">
                             <h3>Concierge Services</h3>
-                            <p>Expert solutions for obtaining UAE tax residence for businesses.</p>
+                            <div style="height:1px; width:50px; margin: auto; background-color: #dbbf8b;"></div> <br>
+                            <p>Concierge services offer personalized travel planning and booking, including flights, hotels, and car rentals, along with private jet and yacht charters. Additional services include airport meet and greet, luxury accommodation and villa rentals, custom travel itineraries, and exclusive access to events such as concerts, sports, and fashion shows, ensuring a seamless and luxurious experience.</p>
                         </div>
                     </a>
                 </td>

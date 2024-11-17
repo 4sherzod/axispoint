@@ -8,10 +8,7 @@ function renderHeader() {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    
-    <!-- Corrected scroll.js link -->
-    <script src="scroll.js"></script>
-    
+
     <header>
         <div> 
             <a href="index.php">
@@ -41,8 +38,43 @@ function renderHeader() {
                 </li>
                 <li><a href="contact-us.php">Contact Us</a></li>
             </nav>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div id="mobile-menu" class="fa fa-bars"></div>
         </div>
     </header>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-nav">
+        <a href="index.php">Home</a>
+        <a href="about-us.php">About us</a>
+        <a href="services.php">Services</a>
+        <a href="contact-us.php">Contact Us</a>
+    </div>
+
+    <!-- Overlay for background dimming -->
+    <div id="overlay"></div>
+
     <div id="emptyspace"></div>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            const mobileNav = document.querySelector(".mobile-nav");
+            const overlay = document.getElementById("overlay");
+
+            mobileNav.classList.toggle("active");
+            overlay.style.display = mobileNav.classList.contains("active") ? "block" : "none";
+        });
+
+        // Close mobile menu when clicking on overlay
+        document.getElementById("overlay").addEventListener("click", function() {
+            const mobileNav = document.querySelector(".mobile-nav");
+            const overlay = document.getElementById("overlay");
+
+            mobileNav.classList.remove("active");
+            overlay.style.display = "none";
+        });
+    </script>
     ';
 }
