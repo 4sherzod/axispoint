@@ -8,35 +8,20 @@
     <title>Contact Us</title>
     <style>
         .services {
-            margin: 40px auto;
-            width: 100%;
-            max-width: 1200px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border-bottom: none;
-            table-layout: fixed;
-        }
-
-        td {
-            padding: 15px;
-            vertical-align: top;
-            border-bottom: none;
-            width: 33.33%;
-            height: fit-content;
+            width: 80%;
+            margin: 0 auto;
         }
 
         .service {
             position: relative;
             background-color: #fff;
+            /* border: 1px solid black; */
             padding: 20px;
             padding-top: 10px;
+            height: 150px;
             /* border-radius: 10px; */
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
-            height: 150px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -154,13 +139,18 @@
             width: 100%;
             height: 100%;
         }
+
         #emailDiv {
             background-color: #253450;
+            margin-top: 30px;
         }
+
         #emailDiv {
             color: white;
             color: #dbbf8b;
             text-align: center;
+            display: flex;
+            height: 545px;
         }
 
         #email {
@@ -177,11 +167,14 @@
             background-color: #253450;
         }
 
-        #compassBack {
-            background-image: url('./img/compass.png');
-            background-repeat: no-repeat;
-            background-size: 800px;
-            background-position: 50px;
+        #emailDiv img {
+            width: 800px;
+            object-fit: cover;
+            margin-left: 50px;
+        }
+
+        #emailDivRight {
+            margin-left: auto;
         }
 
         #form * {
@@ -192,10 +185,6 @@
 
         .form-container {
             width: 450px;
-            margin: 0 auto;
-            margin-right: 100px;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             box-sizing: border-box;
             background-color: #253450;
@@ -245,11 +234,106 @@
         #comp {
             height: 100px;
         }
-        form input, textarea {
+
+        form input,
+        textarea {
             color: white;
 
             font-size: 20px !important;
             font-weight: bold !important;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        table tr {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            /* Center the items */
+        }
+
+        table td {
+            padding: 15px;
+            vertical-align: top;
+            height: fit-content;
+            width: 25%;
+            /* 1x4 layout for large screens */
+        }
+
+        /* Mobile layout: 4x1 (existing styles) */
+        @media (min-width: 401px) and (max-width: 900px) {
+            table tr {
+                flex-wrap: wrap;
+                /* Enable wrapping on smaller screens */
+            }
+
+            table td {
+                width: 40%;
+                /* Stacks items in a single column on mobile */
+            }
+
+            #emailDiv img {
+                display: none;
+                /* Existing mobile-specific styling */
+            }
+
+            #emailDiv {
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            #emailDivRight {
+                margin: 0 auto;
+            }
+
+            #email {
+                font-size: 36px;
+                /* Adjust font size for mobile */
+                margin-right: 0;
+                padding-top: 10px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            table tr {
+                flex-wrap: wrap;
+                /* Enable wrapping on smaller screens */
+            }
+
+            table td {
+                width: 70%;
+                /* Stacks items in a single column on mobile */
+            }
+
+            #emailDiv img {
+                display: none;
+                /* Existing mobile-specific styling */
+            }
+
+            #emailDiv {
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                padding: 20px;
+            }
+
+            #emailDivRight {
+                margin: 0 auto;
+            }
+
+            #email {
+                font-size: 36px;
+                /* Adjust font size for mobile */
+                margin-right: 0;
+                padding-top: 10px;
+            }
         }
     </style>
 </head>
@@ -282,7 +366,7 @@
                                 <li><span>
                                         <p>Speak to us</p>
                                     </span></li>
-                                <li><span>contact@axispoint.me</span></li>
+                                <li><span>axispoint@gmail.com</span></li>
                             </ul>
                         </div>
                     </a>
@@ -306,7 +390,7 @@
                     </a>
                 </td>
                 <td>
-                    <a href="tel:+97145580736">
+                    <a href="tel:+1234567890">
                         <div class="service">
                             <div class="container">
                                 <i class="fa-solid fa-phone-volume" style="transform: rotate(-45deg);"></i>
@@ -318,14 +402,13 @@
                                 <li><span>
                                         <p>Mon-Fri from 8am to 5pm</p>
                                     </span></li>
-                                <li><span>+97145580736
-                                </span></li>
+                                <li><span>+1234567890</span></li>
                             </ul>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="https://wa.me/97145580736">
+                    <a href="https://wa.me/905317750250">
                         <div class="service">
                             <div class="container">
                                 <i class="fa-brands fa-whatsapp" style="font-size:35px;"></i>
@@ -337,7 +420,7 @@
                                 <li><span>
                                         <p>WhatsApp</p>
                                     </span></li>
-                                <li><span>+97145580736</span></li>
+                                <li><span>+1234567890</span></li>
                             </ul>
                         </div>
                     </a>
@@ -347,7 +430,8 @@
     </section>
 
     <div id="emailDiv" class="dark nav-item">
-        <div id="compassBack">
+        <img src="./img/compass.png">
+        <div id="emailDivRight">
             <h1 id="email" class="dark">Contact Us</h1>
             <div class="form-container" class="dark">
                 <form action="/submit-form" method="post" id="form">
@@ -390,13 +474,11 @@
                 });
             });
         });
-        const element = document.getElementById("email");
-    console.log("Width: " + element.offsetWidth + "px");
     </script>
 
     <?php
-        include_once "footer.php";
-        renderFooter();
+    include_once "footer.php";
+    renderFooter();
     ?>
 </body>
 

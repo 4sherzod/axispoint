@@ -22,10 +22,41 @@
         }
 
         #companyDiv {
+            align-items: center;
+            /* Center items vertically */
             display: flex;
             gap: calc(10%);
             /* border: 1px solid blue; */
         }
+
+        .companyClass {
+            width: 80%;
+            margin: 100px auto;
+            line-height: 30px;
+        }
+
+        @media (max-width: 900px) {
+            
+
+            #companyDiv {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 0;
+                /* Full width on mobile */
+            }
+
+            #companyDiv div {
+                min-width: 75%;
+                /* Full width on mobile */
+                margin-bottom: 70px;
+            }
+            .companyClass {
+                margin: 0 auto;
+            }
+        }
+
 
         #companyDiv div {
             width: 45%;
@@ -35,9 +66,10 @@
         #companyDiv>div>img {
             margin: auto;
             /* width: 100%; */
+            width: 100%;
+            height: auto;
             object-fit: cover;
-            height: 330px;
-            width: 500px;
+            max-width: 500px;
             margin-right: 0;
         }
 
@@ -46,12 +78,6 @@
             text-align: left;
             /* font-weight: normal; */
             /* margin-bottom: 20px; */
-        }
-
-        .companyClass {
-            width: 80%;
-            margin: 100px auto;
-            line-height: 30px;
         }
 
         ol {
@@ -205,7 +231,6 @@
                 <p>Seamless corporate tax registration for full compliance and simplified business growth.</p>
             </div>
             <div class="benefit">
-                <br>
                 <h3>Financial Flexibility</h3>
                 <p>Better tax planning and opportunities for global business expansion.</p>
             </div>
