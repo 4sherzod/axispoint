@@ -27,6 +27,9 @@
             background-position: 330px 0px;
             /* border: 1px solid red; */
         } 
+
+            /* background-position: 72% 2%;
+        } */
     </style>
 </head>
 
@@ -50,9 +53,13 @@
                 </div>
             </div>
         </div>
+
         <div id="globe-container" style=" text-align: left">
             <iframe src="globe.html" frameborder="0" style="width: 100%; height: 100%; overflow: hidden;"
                 scrolling="no"></iframe>
+        <!-- <div class="globe-container">
+        <iframe class="globbe-container" src="globe.html" frameborder="0" style="width: 100%; height: 100%;"></iframe> -->
+
         </div>
     </div>
     <br> <br>

@@ -70,7 +70,6 @@ p {
     font-size: 20px;
 }
 
-/* Company Div and Left Section */
 #companyDiv {
     display: flex;
     background-color: #253450;
@@ -81,53 +80,40 @@ p {
     position: relative;
 }
 
-#companyDiv>div {
+#companyDiv > div {
     height: 100%;
 }
 
 .left {
     margin-left: 150px;
     color: white;
-    width: 1000px;
+    width: 700px;
+    /* border: 1px solid red; */
     height: fit-content;
     align-items: center;
     display: flex;
-    position: relative;
-    z-index: 2; /* Ensures it appears above the iframe */
+    z-index: 1;
 }
 
 #leftText {
     height: fit-content;
     margin: auto;
+    /* border: 1px solid red; */
+
+}
+
+.companyClass h1,
+.companyClass {
+    text-align: left;
+}
+
+.companyClass {
     width: 80%;
+    margin: auto;
+    line-height: 30px;
 }
 
-#leftText>h1>img {
-    height: 100px;
-}
-
-/* Globe Container */
-#globe-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 1; /* Ensures it stays behind .left */
-}
-
-#globe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    overflow: hidden;
-}
-
-/* Button Styles */
 .btn {
-    width: fit-content;
     padding: 15px 20px;
     background-color: #dbbf8b;
     color: white;
@@ -140,6 +126,11 @@ p {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #c5ab7d;
 }
 
 .btn i {
@@ -148,15 +139,10 @@ p {
     transition: transform 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #c5ab7d;
-}
-
 .btn:hover i {
     transform: translateX(7px);
 }
 
-/* Other Components */
 #desc {
     width: 450px;
     margin: auto;
@@ -164,112 +150,76 @@ p {
     font-size: 18px;
 }
 
-.serviceextended {
-    padding: 50px 0px;
+/* Globe Container */
+#globe-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
-.serviceextended a {
-    display: inline-block;
-    background-color: #dbbf8b;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.serviceextended a:hover {
-    background-color: #b29d76;
-    transform: translateY(-2px);
-}
-
-.serviceextended p {
-    width: 40%;
-}
-
-.serviceextended h1 {
-    text-decoration: solid;
-    margin-bottom: 50px;
-}
-
-.serviceextended div {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.serviceextended img {
-    height: 270px;
-    width: 480px;
-    object-fit: cover;
-}
-
-.darker {
-    background-color: #f7fdff;
-    text-align: right;
-}
-
-/* Keyframe Animations */
-@keyframes fadeInBottom {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.appear-from-bottom {
-    opacity: 0;
-    animation: fadeInBottom 1s ease forwards;
-}
-
-.appear {
-    opacity: 1;
+#globe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
 }
 
 /* Responsive Styles */
 @media (max-width: 900px) {
-    .left {
-        margin-left: 0;
+    #companyDiv {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        height: 91vh;
+    }
+
+    #globe-container {
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
-        z-index: 2;
-        background-color: rgba(37, 52, 80, 0.9); /* Optional: semi-transparent background for readability */
-        padding: 20px;
+        left: 0;
+        z-index: 0; /* Behind the left div */
     }
+
+    .left {
+        margin: 15vh auto;
+        width: 500px;
+        height: 100vh;
+        text-align: left;
+        z-index: 1; /* In front of the globe */
+        /* border: 1px solid red; */
+        position: relative;
+        /* padding: 20px; */
+    }
+
     #leftText {
         width: 90%;
+        margin: 50px auto;
+        color: white;
+        /* border: 1px solid red; */
+    }
+    /* #leftText>h1{
         margin: auto;
-    }
-    #companyDiv {
-        flex-direction: column; /* Stack elements */
-        height: auto;
-        position: relative;
-    }
-    #globe-container {
-        height: 100vh;
-        position: relative;
-        z-index: 1;
-    }
-    table tr, table td {
+    } */
+
+    table tr,
+    table td {
         display: block;
         width: 90%;
         margin: auto;
     }
+
     .service {
         height: fit-content;
     }
-    .service>img {
+
+    .service > img {
         height: 45vh;
     }
+
     .service p {
         padding-bottom: 30px;
     }
