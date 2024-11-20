@@ -31,6 +31,7 @@
 		.section1>h1 {
 			padding-top: 30px;
 		}
+
 		.section1 {
 			margin-bottom: 30px;
 		}
@@ -62,6 +63,39 @@
 			width: 500px;
 			padding-bottom: 20px;
 		}
+
+		@media (max-width: 900px) {
+			.section1 {
+				border: 1px solid red;
+				width: 100%;
+				/* Full width on mobile */
+				max-width: 100%;
+				margin: 0 auto;
+				/* Center the section */
+			}
+
+			.section1 h1 {
+				/* border: 1px solid red; */
+				font-size: 1.8em;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.section1 .text-content {
+				/* border: 1px solid red; */
+				display: block;
+				min-width: 80%;
+				/* Stack content vertically */
+				padding: 0;
+				/* Remove any padding */
+			}
+
+			.section1 .text-content p {
+				width: 100%;
+				/* Full width for each paragraph */
+			}
+		}
+	</style>
 	</style>
 </head>
 
@@ -78,55 +112,42 @@
 		<img src="./img/trust.jpg" alt="Trust & Fiduciary Services" class="hero">
 	</section>
 
-
 	<section class="section1">
 		<h1>Trust & Fiduciary Services</h1>
-		<table>
-			<tr>
-				<td>
-					<p>Axis Point is dedicated to providing high-net-worth individuals, families, and global
-						enterprises with trusted Trust & Fiduciary Services that secure and enhance wealth across
-						generations. Our focus on professionalism, integrity, and client success ensures every
-						solution is tailored to meet unique needs, whether for asset protection, succession
-						planning, or wealth growth.
-					</p>
-				</td>
-				<td>
-					<p>
-						We offer efficient, compliant trust and fiduciary structures designed to meet
-						international
-						standards, often with minimal residency requirements. Our global programs provide a
-						holistic
-						approach to wealth preservation, combining asset protection, freedom of movement, and
-						opportunities
-						for profitable investments.
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>With years of expertise and a global perspective, our team simplifies the complex world of
-						trust
-						formation, fiduciary management, and family office services. Axis Point’s services are
-						built on
-						confidentiality, stability, and strategic planning, helping you achieve lasting financial
-						security.
-
-					</p>
-				</td>
-				<td>
-					<p>
-						As a certified provider of Trust & Fiduciary Services, Axis Point guides clients through
-						the setup
-						and management of secure structures that align with their financial strategies and expand
-						their
-						global footprint.
-					</p>
-				</td>
-			</tr>
-		</table>
+		<div class="text-content">
+			<p>
+				Axis Point is dedicated to providing high-net-worth individuals, families, and global
+				enterprises with trusted Trust & Fiduciary Services that secure and enhance wealth across
+				generations. Our focus on professionalism, integrity, and client success ensures every
+				solution is tailored to meet unique needs, whether for asset protection, succession
+				planning, or wealth growth.
+				<br><br>
+				With years of expertise and a global perspective, our team simplifies the complex world of
+				trust
+				formation, fiduciary management, and family office services. Axis Point’s services are
+				built on
+				confidentiality, stability, and strategic planning, helping you achieve lasting financial
+				security.
+			</p>
+			<p>
+				We offer efficient, compliant trust and fiduciary structures designed to meet
+				international
+				standards, often with minimal residency requirements. Our global programs provide a
+				holistic
+				approach to wealth preservation, combining asset protection, freedom of movement, and
+				opportunities
+				for profitable investments.
+				<br><br>
+				As a certified provider of Trust & Fiduciary Services, Axis Point guides clients through
+				the setup
+				and management of secure structures that align with their financial strategies and expand
+				their
+				global footprint.
+			</p>
+		</div>
+		</div>
+		<br><br>
 	</section>
-
 	<section class="dark-section">
 		<h2>Why Invest in Trust & Fiduciary Services?</h2>
 		<p style="width: 56%; margin: 0 auto;">

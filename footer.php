@@ -1,5 +1,6 @@
 <?php
-function renderFooter() {
+function renderFooter()
+{
     echo '
     <style>
     footer {
@@ -8,17 +9,27 @@ function renderFooter() {
         padding: 50px;
         display: flex;
     }
-
+    #socials {
+        margin-left: auto;
+        margin-top: 57px;
+        margin-right: 75px;
+        width: auto;
+        height: auto;
+    }
     footer div {
         display: block;
         padding: 0;
         margin-left: 60px;
         text-align: left;
         width: 170px;
+        min-width: 170px; /* Ensure minimum width */
         height: 150px;
-        /* border: 1px solid red; */
     }
-
+    #together {
+        display: flex;
+        margin-right: 75px;
+        width: fit-content;
+    }
     footer p {
         margin-top: 10px;
     }
@@ -68,6 +79,29 @@ function renderFooter() {
         background-color: darkgrey;
         transition: 0.3s ease;
     }
+    div {
+        margin 0 auto;
+    }
+    @media (max-width: 900px) {
+        footer {
+            align-items: center;
+            flex-direction: column;
+        }
+        footer div {
+            margin: 0 auto;
+        }
+        #socials {
+            width: 100%;
+            margin-left: 150px;
+        }
+        #together {
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            margin-top: 30px;
+            left: 20px;
+        }
+    }
 </style>
 <footer>
     <div style="text-align: center; width: 200px;">
@@ -75,27 +109,29 @@ function renderFooter() {
         <p style="font-size: 25px; margin: 0 auto; text-align: center;">AXIS POINT</p>
         <p>Building business with you since 2020</p>
     </div>
-    <div>
-        <h2>Quick Access</h2>
-        <a href="#" class="hover-link">Home</a>
-        <br>
-        <a href="#" class="hover-link">About Us</a>
-        <br>
-        <a href="#" class="hover-link">Services</a>
-        <br>
-        <a href="#" class="hover-link">Contact Us</a>
+    <div id="together">
+        <div>
+            <h2>Quick Access</h2>
+            <a href="index.php" class="hover-link">Home</a>
+            <br>
+            <a href="about-us.php" class="hover-link">About Us</a>
+            <br>
+            <a href="services.php" class="hover-link">Services</a>
+            <br>
+            <a href="contact-us.php" class="hover-link">Contact Us</a>
+        </div>
+        <div>
+            <h2>Quick Info</h2>
+            <a href="tel:+97145580736" class="hover-link">+971 4 558 0736</a>
+            <br>
+            <a href="#" class="hover-link">contact@axispoint.me</a>
+            <br>
+            <a href="#" class="hover-link">Nad Al Sheba 3</a>
+            <br>
+            <a href="#" class="hover-link">Repton School Dubai</a>
+        </div>
     </div>
-    <div>
-        <h2>Quick Info</h2>
-        <a href="#" class="hover-link">+971 4 558 0736</a>
-        <br>
-        <a href="#" class="hover-link">contact@axispoint.me</a>
-        <br>
-        <a href="#" class="hover-link">Nad Al Sheba 3</a>
-        <br>
-        <a href="#" class="hover-link">Repton School Dubai</a>
-    </div>
-    <div style="margin-left: auto; margin-top: 57px; margin-right: 150px; width: auto; height: auto">
+    <div id="socials">
         <h2 style=" margin-bottom: 10px">Follow Us: </h2>
         <a href=""><img src="./img/instagram-icon.svg" alt=""></a>
         <a href=""><img src="./img/x-icon.svg" alt=""></a>
@@ -105,4 +141,5 @@ function renderFooter() {
     </div>
 </footer>
     
-    ';}
+    ';
+}

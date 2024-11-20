@@ -86,6 +86,53 @@
             margin-top: 80px;
             width: fit-content;
         }
+
+        @media (max-width: 900px) {
+
+
+            #companyDiv {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 0;
+                /* Full width on mobile */
+            }
+
+            #companyDiv div {
+                min-width: 75%;
+                /* Full width on mobile */
+                margin-bottom: 70px;
+            }
+
+            .companyClass {
+                margin: 0 auto;
+            }
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 900px) {
+            #countries {
+                display: block;
+                /* Change to block layout for stacking */
+            }
+
+            #countries tr {
+                display: block;
+                /* Make each row display as a block */
+                margin-bottom: 20px;
+                /* Add spacing between rows */
+            }
+
+            #countries td {
+                display: block;
+                /* Stack each cell vertically */
+                width: 100%;
+                /* Full width for each cell */
+                text-align: left;
+                padding-bottom: 10px;
+            }
+        }
     </style>
 </head>
 

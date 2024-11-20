@@ -10,6 +10,7 @@ function renderHeader() {
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
+    <script src="scroll.js"></script>
     <header>
         <div id=headerIn> 
             <a href="index.php">

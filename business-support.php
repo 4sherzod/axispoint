@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>AxisPoint Citizenship by Investment Programs</title>
+	<title>AxisPoint Business Support & Outsourcing Services</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,6 @@
 		}
 
 		.countryImg {
-			/* height: 80px; */
 			width: 80px;
 		}
 
@@ -39,9 +38,7 @@
 
 		ol {
 			list-style-type: none;
-			/* Ensure this is set to decimal */
 			margin-left: -10px;
-			/* Add some left margin for better visibility */
 		}
 
 		ol>li {
@@ -57,6 +54,7 @@
 		p {
 			font-size: 20px;
 		}
+
 		table {
 			margin: 0 auto;
 		}
@@ -65,8 +63,33 @@
 			width: 500px;
 			padding-bottom: 20px;
 		}
+
 		.section1 {
 			margin: 20px;
+		}
+
+		@media (max-width: 900px) {
+			.section1 {
+				width: 100%;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+
+			.section1 h1 {
+				font-size: 1.8em;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.section1 .text-content {
+				display: block;
+				min-width: 80%;
+				padding: 0;
+			}
+
+			.section1 .text-content p {
+				width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -85,46 +108,30 @@
 	</section>
 
 	<section class="section1">
-		<h1>Citizenship by Investment</h1>
-		<table>
-			<tr>
-				<td>
-					<p>
-						Axis Point is a trusted provider for governments around the world, facilitating
-						Citizenship by Investment programs and Residency solutions for individuals seeking
-						enhanced global mobility and financial freedom. Our commitment to transparency and ethical
-						practices ensures a smooth, secure process for obtaining a second citizenship or
-						residency.
-					</p>
-				</td>
-				<td>
-					<p>
-						We offer efficient and legal pathways to second citizenship through investment, often with
-						minimal or no residency requirements. Our global programs combine the advantages of secure
-						residency, unrestricted travel, and lucrative investment opportunities, allowing you to
-						expand your global reach.
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<p>
-						With a strong foundation and a team of experienced international consultants, Axis Point
-						brings a deep understanding of investor immigration programs across multiple
-						jurisdictions. We provide tailored guidance to meet the unique needs of each client,
-						helping them achieve flexibility and security as global citizens.
-					</p>
-				</td>
-				<td>
-					<p>
-						As an approved provider of Citizenship by Investment services, Axis Point supports clients
-						at every stage of the process. From initial consultation to final documentation, we ensure
-						that each step is handled professionally, enabling clients to realize their ambitions of
-						global citizenship and financial independence.
-					</p>
-				</td>
-			</tr>
-		</table>
+		<h1>Business Support & Outsourcing Services</h1>
+		<div class="text-content">
+			<p>
+				Axis Point offers a wide range of Business Support & Outsourcing Services, aimed at helping
+				businesses streamline their operations, reduce costs, and enhance efficiency. We understand that
+				managing non-core functions can be time-consuming, and our services are designed to allow you to
+				focus on your main business goals.
+				<br><br>
+				With our expertise in IT Support, Document Management, Procurement, and Business Process Outsourcing
+				(BPO), we provide reliable, flexible, and scalable solutions tailored to meet the unique needs of
+				each client.
+			</p>
+			<p>
+				Our team of professionals ensures a seamless integration of these services into your existing
+				operations, so you can benefit from reduced operational complexity and improved productivity. Axis
+				Point’s outsourcing solutions are structured to adapt to your business growth, providing long-term
+				value and sustainability.
+				<br><br>
+				As a trusted partner in business support, Axis Point is committed to delivering high-quality
+				services that enable your organization to operate efficiently, scale effectively, and stay
+				competitive in today’s fast-paced business environment.
+			</p>
+		</div>
+		<br><br>
 	</section>
 
 	<section class="dark-section">
@@ -188,7 +195,6 @@
 			</ol>
 		</div>
 	</section>
-
 
 	<?php
 	include_once "footer.php";
