@@ -12,6 +12,8 @@ function scrollbar($array) {
                 position: sticky;
                 top: 80px; /* Offset by 100px from the top */
                 z-index: 1000;
+                margin-bottom: 50px;
+                text-align: center;
             }
 
             .nav-item {

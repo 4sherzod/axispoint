@@ -120,7 +120,7 @@
             #countries tr {
                 display: block;
                 /* Make each row display as a block */
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 /* Add spacing between rows */
             }
 
@@ -131,6 +131,16 @@
                 /* Full width for each cell */
                 text-align: left;
                 padding-bottom: 10px;
+            }
+            /* .companyDiv>div>h1{
+                margin-top: 100px;
+            } */
+            #companyDiv>div>img{
+                width: 100%;
+                object-fit: cover;
+            }
+            td>div>img{
+                margin-top: 10px;
             }
         }
     </style>
