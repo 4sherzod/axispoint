@@ -80,7 +80,7 @@ p {
     position: relative;
 }
 
-#companyDiv > div {
+#companyDiv>div {
     height: 100%;
 }
 
@@ -164,6 +164,16 @@ p {
     height: 100%;
     border: none;
     overflow: hidden;
+}.left {
+    pointer-events: none; /* Disable all interactions for the container */
+    position: relative;
+    z-index: 1;
+}
+
+#plswork {
+    pointer-events: auto; /* Enable interactions for this specific element */
+    z-index: 2; /* Ensure it's above overlapping elements */
+    position: relative;
 }
 
 /* Responsive Styles */
@@ -181,7 +191,8 @@ p {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 0; /* Behind the left div */
+        z-index: 0;
+        /* Behind the left div */
     }
 
     .left {
@@ -189,18 +200,27 @@ p {
         width: 500px;
         height: 100vh;
         text-align: left;
-        z-index: 1; /* In front of the globe */
-        /* border: 1px solid red; */
+        z-index: 1;
         position: relative;
-        /* padding: 20px; */
+        pointer-events: none;
+        /* Makes the container non-blocking */
+    }
+
+    #plzwork {
+        pointer-events: auto;
+        /* Enables interaction */
+        z-index: 2;
+        /* Places it above overlapping elements */
+        position: relative;
+        /* Keeps its layout intact */
     }
 
     #leftText {
         width: 90%;
         margin: 50px auto;
         color: white;
-        /* border: 1px solid red; */
     }
+
     /* #leftText>h1{
         margin: auto;
     } */
@@ -216,7 +236,7 @@ p {
         height: fit-content;
     }
 
-    .service > img {
+    .service>img {
         height: 45vh;
     }
 

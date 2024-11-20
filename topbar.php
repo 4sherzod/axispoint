@@ -43,7 +43,7 @@ function renderHeader() {
 
             <div id="mobile-menu" class="fa fa-bars"></div>
             <nav class="mobile-nav">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php" style="color: #333; !important">Home</a></li>
                 <li><a href="about-us.php">About us</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="contact-us.php">Contact Us</a></li>

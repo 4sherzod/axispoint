@@ -26,7 +26,7 @@ function renderFooter()
         height: 150px;
     }
     #together {
-        /*display: flex;*/
+        display: flex;
         margin-right: 75px;
         width: fit-content;
     }
@@ -118,6 +118,7 @@ function renderFooter()
             height: fit-content;
             /* Ensure #together wraps around its contents */
             margin-top: 30px;
+            display: block;
         }
         #together h2{
             margin-bottom: 5px;

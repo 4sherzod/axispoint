@@ -138,6 +138,7 @@
                     height: fit-content;
                     /* Ensure #together wraps around its contents */
                     margin-top: 30px;
+                    display: flex;
                }
                #together h2{
                     margin-bottom: 5px;

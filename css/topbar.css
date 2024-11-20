@@ -163,6 +163,10 @@ header.scrolled {
     background-color: #253450 !important;
 }
 
+header.scrolled nav a {
+    color: #dbbf8b !important;
+}
+
 header.scrolled #title {
     color: #dbbf8b !important;
 }
@@ -213,7 +217,10 @@ header.scrolled #title {
     color: #333;
     font-size: 18px;
 }
-
+/* For mobile navigation */
+header.scrolled .mobile-nav a {
+    color: #333 !important;
+}
 .mobile-nav a:hover {
     /* background-color: #f4f4f4; */
     color: #b28e50;
