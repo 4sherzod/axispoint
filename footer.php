@@ -28,7 +28,7 @@ function renderFooter()
     }
     #together {
         display: flex;
-        margin: auto;
+        margin-right: 75px;
         width: fit-content;
     }
     footer p {
@@ -91,20 +91,45 @@ function renderFooter()
         footer {
             align-items: center;
             flex-direction: column;
+            /* border: 1px solid red; */
         }
+
         footer div {
             margin: 0 auto;
         }
+
         #socials {
-            width: 100%;
-            margin-left: 150px;
+            margin: 0;
+            /* Remove any default margin */
+            margin-top: 0px;
+            /* Add some space above it */
+            /* align-self: flex-start; */
+            /* Align it to the far left */
+            width: auto;
+            /* Allow its width to adjust */
         }
+
+        #socials h2 {
+            text-align: left;
+            /* Align heading to the left */
+        }
+
+
         #together {
             margin: 0 auto;
-            width: 100%;
-            position: relative;
+            box-sizing: border-box;
+            /* Include border in the total width and height */
+            width: fit-content;
+            height: fit-content;
+            /* Ensure #together wraps around its contents */
             margin-top: 30px;
-            left: 20px;
+        }
+        #together h2{
+            margin-bottom: 5px;
+        }
+
+        #together div {
+            margin-bottom: 20px;
         }
     }
 </style>

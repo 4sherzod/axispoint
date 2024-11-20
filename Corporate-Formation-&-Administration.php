@@ -35,28 +35,6 @@
             line-height: 30px;
         }
 
-        @media (max-width: 900px) {
-            
-
-            #companyDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                gap: 0;
-                /* Full width on mobile */
-            }
-
-            #companyDiv div {
-                min-width: 75%;
-                /* Full width on mobile */
-                margin-bottom: 70px;
-            }
-            .companyClass {
-                margin: 0 auto;
-            }
-        }
-
 
         #companyDiv div {
             width: 45%;

@@ -18,18 +18,18 @@ window.addEventListener("scroll", function() {
     const darkSection = getDarkSectionInView(); // Check for the currently visible dark-section
 
     const header = document.querySelector('header');
-    const dropdown = document.querySelector('.dropdown');
-    const mobileNav = document.querySelector('.mobile-nav');
+    // const dropdown = document.querySelector('.dropdown');
+    // const mobileNav = document.querySelector('.mobile-nav');
 
 
     // Check if we have a dark-section currently visible
     if (darkSection) {
         header.classList.remove("scrolled");
-        dropdown.classList.remove("scrolled");
-        mobileNav.classList.remove("scrolled");
+        // dropdown.classList.remove("scrolled");
+        // mobileNav.classList.remove("scrolled");
     } else {
         header.classList.add("scrolled");
-        dropdown.classList.add("scrolled");
-        mobileNav.classList.add("scrolled");
+        // dropdown.classList.add("scrolled");
+        // mobileNav.classList.add("scrolled");
     }
 });
