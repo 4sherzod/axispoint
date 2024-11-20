@@ -8,15 +8,8 @@ function renderFooter()
         color: #dbbf8b;
         padding: 50px;
         display: flex;
-        height: 150px;
-    }
-    #socials {
-        margin-left: auto;
-        margin-top: 57px;
-        margin-right: 75px;
-        width: auto;
-        height: auto;
-    }
+        min-height: 150px;
+
     footer div {
         display: block;
         padding: 0;
@@ -28,16 +21,17 @@ function renderFooter()
     }
     #together {
         display: flex;
-        margin-right: 75px;
+        gap: 120px;
+        margin: auto;
         width: fit-content;
     }
     footer p {
         margin-top: 10px;
     }
 
-    footer h2 {
+    #together>div>h2 {
         color: white;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     .hover-link {
         text-decoration: none;
@@ -69,79 +63,63 @@ function renderFooter()
         
     }
 
-    footer a img {
-        background-color: lightgrey; 
-        border-radius: 30%; 
-        width: 36px;
-        margin-right: 2px;
-    }
-
-    footer a img:hover {
-        background-color: darkgrey;
-        transition: 0.3s ease;
-    }
     div {
         margin 0 auto;
     }
-    #axisFooter{
-        margin-right: 350px;
+    .line{
+        height: 1px;
+        display: none;
     }
 
     @media (max-width: 900px) {
         footer {
             align-items: center;
             flex-direction: column;
-            /* border: 1px solid red; */
+            height: fit-content;
         }
 
         footer div {
             margin: 0 auto;
         }
 
-        #socials {
-            margin: 0;
-            /* Remove any default margin */
-            margin-top: 0px;
-            /* Add some space above it */
-            /* align-self: flex-start; */
-            /* Align it to the far left */
-            width: auto;
-            /* Allow its width to adjust */
-        }
-
-        #socials h2 {
-            text-align: left;
-            /* Align heading to the left */
-        }
-
-
         #together {
+            display: block;
             margin: 0 auto;
-            box-sizing: border-box;
             /* Include border in the total width and height */
             width: fit-content;
             height: fit-content;
             /* Ensure #together wraps around its contents */
             margin-top: 30px;
+            height: fit-content;
+            text-align: center;
         }
         #together h2{
             margin-bottom: 5px;
         }
 
         #together div {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .line{
+            display: block;
+            height: 1px;
+            width: 50px; 
+            margin: auto; 
+            border-top: 1px solid #dbbf8b;
         }
     }
 </style>
 <footer>
   
     <div id="together">
-        <div id="axisFooter" style="text-align: center; width: 200px;">
+        <div class="together" id="axisFooter" style="text-align: center; width: 200px;">
             <img src="./img/compass.png" alt="" width="60px">
             <p style="font-size: 25px; margin: 0 auto; text-align: center;">AXIS POINT</p>
             <p>Building business with you since 2020</p>
         </div>
-        <div>
+        <div class="line"></div>
+        <div class="together">
             <h2>Quick Access</h2>
             <a href="index.php" class="hover-link">Home</a>
             <br>
@@ -151,7 +129,8 @@ function renderFooter()
             <br>
             <a href="contact-us.php" class="hover-link">Contact Us</a>
         </div>
-        <div>
+        <div class="line"></div>
+        <div class="together">
             <h2>Quick Info</h2>
             <a href="tel:+97145580736" class="hover-link">+971 4 558 0736</a>
             <br>
