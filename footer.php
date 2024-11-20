@@ -8,6 +8,7 @@ function renderFooter()
         color: #dbbf8b;
         padding: 50px;
         display: flex;
+        height: 150px;
     }
     #socials {
         margin-left: auto;
@@ -27,7 +28,7 @@ function renderFooter()
     }
     #together {
         display: flex;
-        margin-right: 75px;
+        margin: auto;
         width: fit-content;
     }
     footer p {
@@ -82,6 +83,10 @@ function renderFooter()
     div {
         margin 0 auto;
     }
+    #axisFooter{
+        margin-right: 350px;
+    }
+
     @media (max-width: 900px) {
         footer {
             align-items: center;
@@ -104,12 +109,13 @@ function renderFooter()
     }
 </style>
 <footer>
-    <div style="text-align: center; width: 200px;">
-        <img src="./img/compass.png" alt="" width="60px">
-        <p style="font-size: 25px; margin: 0 auto; text-align: center;">AXIS POINT</p>
-        <p>Building business with you since 2020</p>
-    </div>
+  
     <div id="together">
+        <div id="axisFooter" style="text-align: center; width: 200px;">
+            <img src="./img/compass.png" alt="" width="60px">
+            <p style="font-size: 25px; margin: 0 auto; text-align: center;">AXIS POINT</p>
+            <p>Building business with you since 2020</p>
+        </div>
         <div>
             <h2>Quick Access</h2>
             <a href="index.php" class="hover-link">Home</a>
@@ -131,15 +137,15 @@ function renderFooter()
             <a href="#" class="hover-link">Repton School Dubai</a>
         </div>
     </div>
-    <div id="socials">
-        <h2 style=" margin-bottom: 10px">Follow Us: </h2>
-        <a href=""><img src="./img/instagram-icon.svg" alt=""></a>
-        <a href=""><img src="./img/x-icon.svg" alt=""></a>
-        <a href=""><img src="./img/youtube-icon.svg" alt=""></a>
-        <a href=""><img src="./img/instagram-icon.svg" alt=""></a>
-        <a href=""><img src="./img/x-icon.svg" alt=""></a>
-    </div>
 </footer>
     
     ';
 }
+// <div id="socials">
+//         <h2 style=" margin-bottom: 10px">Follow Us: </h2>
+//         <a href=""><img src="./img/instagram-icon.svg" alt=""></a>
+//         <a href=""><img src="./img/x-icon.svg" alt=""></a>
+//         <a href=""><img src="./img/youtube-icon.svg" alt=""></a>
+//         <a href=""><img src="./img/instagram-icon.svg" alt=""></a>
+//         <a href=""><img src="./img/x-icon.svg" alt=""></a>
+//     </div>

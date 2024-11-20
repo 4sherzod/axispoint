@@ -66,7 +66,6 @@
 
 		@media (max-width: 900px) {
 			.section1 {
-				border: 1px solid red;
 				width: 100%;
 				/* Full width on mobile */
 				max-width: 100%;
@@ -75,14 +74,12 @@
 			}
 
 			.section1 h1 {
-				/* border: 1px solid red; */
 				font-size: 1.8em;
 				margin-top: 20px;
 				text-align: center;
 			}
 
 			.section1 .text-content {
-				/* border: 1px solid red; */
 				display: block;
 				min-width: 80%;
 				/* Stack content vertically */
@@ -94,6 +91,10 @@
 				width: 100%;
 				/* Full width for each paragraph */
 			}
+			#companyInfoDiv>h2{
+				margin-top: 20px;
+			}
+			
 		}
 	</style>
 	</style>

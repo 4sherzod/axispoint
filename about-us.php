@@ -175,7 +175,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <!-- <section class="services">
         <h1 style=" margin-top: 50px">Team</h1>
         <table>
             <tr>
@@ -225,7 +225,7 @@
                 </td>
             </tr>
         </table>
-    </section>
+    </section> -->
     <?php
          include_once "footer.php";
          renderFooter();

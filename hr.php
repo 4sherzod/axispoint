@@ -79,6 +79,10 @@
             .companyClass {
                 margin: 0 auto;
             }
+            #companyDiv>div>img{
+                width: 100%;
+                object-fit: cover;
+            }
         }
     </style>
 </head>

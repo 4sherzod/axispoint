@@ -56,7 +56,7 @@
 		/* Media query for mobile to switch to single-column layout */
 		@media (max-width: 900px) {
 			.section1 {
-				border: 1px solid red;
+				/* border: 1px solid red; */
 				width: 100%;
 				/* Full width on mobile */
 				max-width: 100%;
