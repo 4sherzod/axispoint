@@ -2,6 +2,7 @@
 function renderHeader() {
     echo '
     <link rel="stylesheet" href="./css/topbar.css">
+    <script src="scroll.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +11,7 @@ function renderHeader() {
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
     <header>
-        <div> 
+        <div id=headerIn> 
             <a href="index.php">
                 <div id="title">
                     <div id="logo">
@@ -39,27 +40,21 @@ function renderHeader() {
                 <li><a href="contact-us.php">Contact Us</a></li>
             </nav>
 
-            <!-- Hamburger Menu Icon for Mobile -->
             <div id="mobile-menu" class="fa fa-bars"></div>
+            <nav class="mobile-nav">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About us</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
+            </nav>
         </div>
     </header>
 
-    <!-- Mobile Dropdown Menu -->
-    <div class="mobile-nav">
-        <a href="index.php">Home</a>
-        <a href="about-us.php">About us</a>
-        <a href="services.php">Services</a>
-        <a href="contact-us.php">Contact Us</a>
-    </div>
-
-    <!-- Overlay for background dimming -->
     <div id="overlay"></div>
-
     <div id="emptyspace"></div>
 
     <script>
-        // Toggle mobile menu visibility
-        document.getElementById("mobile-menu").addEventListener("click", function() {
+        document.getElementById("mobile-menu").addEventListener("click", function () {
             const mobileNav = document.querySelector(".mobile-nav");
             const overlay = document.getElementById("overlay");
 
@@ -67,13 +62,23 @@ function renderHeader() {
             overlay.style.display = mobileNav.classList.contains("active") ? "block" : "none";
         });
 
-        // Close mobile menu when clicking on overlay
-        document.getElementById("overlay").addEventListener("click", function() {
+        document.getElementById("overlay").addEventListener("click", function () {
             const mobileNav = document.querySelector(".mobile-nav");
             const overlay = document.getElementById("overlay");
 
             mobileNav.classList.remove("active");
             overlay.style.display = "none";
+        });
+
+        // Close mobile nav if the window is resized beyond mobile width
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 900) {
+                const mobileNav = document.querySelector(".mobile-nav");
+                const overlay = document.getElementById("overlay");
+
+                mobileNav.classList.remove("active");
+                overlay.style.display = "none";
+            }
         });
     </script>
     ';

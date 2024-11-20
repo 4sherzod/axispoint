@@ -1,9 +1,12 @@
+/* General Styles */
 main {
     padding: 40px;
 }
-body{
+
+body {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
 .services {
     margin: 0 auto;
     width: 100%;
@@ -22,16 +25,16 @@ td {
     vertical-align: top;
     border-bottom: none;
     width: 33.33%;
-    height: 400px;
+    min-height: 400px;
+    max-height: 800px;
 }
 
 .service {
     background-color: #fff;
-    /* padding: 20px; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 600px;
-    /* border-bottom: 5px solid #dbbf8b; */
+    min-height: 600px;
+    max-height: 800px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -67,71 +70,64 @@ p {
     font-size: 20px;
 }
 
+/* Company Div and Left Section */
 #companyDiv {
     display: flex;
-    /* gap: calc(10%); */
-    /* border: 1px solid blue; */
     background-color: #253450;
     width: 100%;
     height: 91vh;
     margin: 0 auto;
     justify-content: space-between;
+    position: relative;
 }
-
 
 #companyDiv>div {
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
     height: 100%;
 }
+
 .left {
     margin-left: 150px;
     color: white;
     width: 1000px;
-    /* padding-top: 100px; */
-    /* border: 1px solid red; */
     height: fit-content;
     align-items: center;
     display: flex;
+    position: relative;
+    z-index: 2; /* Ensures it appears above the iframe */
 }
 
-#leftText{
-    /* border: 1px solid green; */
+#leftText {
     height: fit-content;
     margin: auto;
+    width: 80%;
 }
-#leftText>h1>img{
+
+#leftText>h1>img {
     height: 100px;
 }
-/* #companyDiv>div>img {
-        margin: auto;
-        /* width: 100%; 
-        object-fit: cover;
-        height: 330px;
-        width: 500px;
-        margin-right: 0;
-    } */
-.companyClass h1,
-.companyClass {
-    text-align: left;
-    /* font-weight: normal; */
-    /* margin-bottom: 20px; */
-}
 
-.companyClass {
-    width: 80%;
-    margin: auto;
-    line-height: 30px;
-}
-
-#plswork {
+/* Globe Container */
+#globe-container {
     width: 100%;
-    margin-top: 40px;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1; /* Ensures it stays behind .left */
 }
 
+#globe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+
+/* Button Styles */
 .btn {
-    width: 50%;
-    /* margin-top: 100px; */
+    width: fit-content;
     padding: 15px 20px;
     background-color: #dbbf8b;
     color: white;
@@ -144,29 +140,23 @@ p {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    /* Smooth color change */
 }
 
 .btn i {
     font-size: 15px;
     margin-left: 5px;
     transition: transform 0.3s ease;
-    /* Smooth transition for arrow */
 }
 
-/* Change background and animate the arrow on hover */
 .btn:hover {
     background-color: #c5ab7d;
 }
 
-/* Slide arrow to the right */
 .btn:hover i {
     transform: translateX(7px);
-    /* Adjust value to control slide distance */
 }
 
-
-
+/* Other Components */
 #desc {
     width: 450px;
     margin: auto;
@@ -189,13 +179,7 @@ p {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-
-}
-
-.serviceextended a:hover,
-.btn:hover {
+.serviceextended a:hover {
     background-color: #b29d76;
     transform: translateY(-2px);
 }
@@ -225,11 +209,10 @@ p {
 
 .darker {
     background-color: #f7fdff;
-    /* background-color: rgba(37, 52, 80, 0.2); */
-    /* background-color: #fbf8f3; */
     text-align: right;
 }
 
+/* Keyframe Animations */
 @keyframes fadeInBottom {
     from {
         opacity: 0;
@@ -251,17 +234,43 @@ p {
     opacity: 1;
 }
 
-#globe-container {
-    /* height: 50vh; */
-    width: 100%;
-    overflow: hidden;
-    margin: 0;
-    /* margin-right: 20px; */
-}
-
-#globe-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    overflow: hidden;
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .left {
+        margin-left: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        background-color: rgba(37, 52, 80, 0.9); /* Optional: semi-transparent background for readability */
+        padding: 20px;
+    }
+    #leftText {
+        width: 90%;
+        margin: auto;
+    }
+    #companyDiv {
+        flex-direction: column; /* Stack elements */
+        height: auto;
+        position: relative;
+    }
+    #globe-container {
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    table tr, table td {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .service {
+        height: fit-content;
+    }
+    .service>img {
+        height: 45vh;
+    }
+    .service p {
+        padding-bottom: 30px;
+    }
 }

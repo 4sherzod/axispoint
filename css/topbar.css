@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'RoyalExquisite';
     src: url('/fonts/RoyalExquisite.ttf') format('truetype'),
-        url('/fonts/RoyalExquisite.otf') format('opentype');
+         url('/fonts/RoyalExquisite.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,15 +15,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white; /* Default background color */
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2000; /* Ensure header is on top */
+    z-index: 2000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 40px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header h1 {
@@ -32,10 +32,10 @@ header h1 {
 }
 
 header nav a {
-    color: #333; /* Default text color */
+    color: #333;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease; /* Smooth transition for color */
+    transition: color 0.3s ease;
 }
 
 header div {
@@ -56,7 +56,7 @@ header div {
     gap: 7px;
 }
 
-#logo{
+#logo {
     width: 40px;
 }
 
@@ -156,7 +156,7 @@ nav li {
 
 /* Scroll-activated Styles */
 header.scrolled {
-    background-color: #253450 !important; /* Navy blue */
+    background-color: #253450 !important;
 }
 
 .dropdown.scrolled {
@@ -164,7 +164,7 @@ header.scrolled {
 }
 
 header.scrolled nav a {
-    color: #dbbf8b !important; /* Light gold text */
+    color: #dbbf8b !important;
 }
 
 header.scrolled #title {
@@ -173,37 +173,39 @@ header.scrolled #title {
 
 /* Mobile Menu Styles */
 #mobile-menu {
-    display: none; /* Hide by default */
+    display: none;
     font-size: 28px;
     cursor: pointer;
     color: #dbbf8b;
-    position: fixed;
+    /* position: fixed; */
+    /* right: 50px; */
+    margin-right: 5px;
     width: fit-content;
-    right: 50px;
-    
 }
 
-/* Initially hide the mobile nav */
+/* Mobile nav with animation */
 .mobile-nav {
-    display: none;
+    display: block;
     position: absolute;
-    width: 400px;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    background-color:white; /* Dark overlay */
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 4000; /* Ensure it's in front of everything */
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
 }
 
-/* Show the mobile nav when active */
+/* Active state for mobile nav */
 .mobile-nav.active {
-    display: block;
-    transform: translateX(0);
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px 0;
 }
 
 /* Style for mobile menu links */
@@ -211,24 +213,35 @@ header.scrolled #title {
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-size: 18px;
 }
 
 .mobile-nav a:hover {
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     color: #b28e50;
 }
 
+
 /* Media Query for Mobile Devices */
 @media (max-width: 900px) {
-    /* Hide the normal menu on mobile */
     header nav {
         display: none;
     }
+    header{
+        width: 100%;
+    }
 
-    /* Show the hamburger icon on mobile */
     #mobile-menu {
         display: block;
     }
+    #headerIn{
+        /* border: 1px solid red; */
+        width: 93%;
+        margin: 0;
+    }
+    #title{
+        margin-left: 20px;
+    }
+    
 }
