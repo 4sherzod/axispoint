@@ -36,12 +36,12 @@
                height: 150px;
                flex-shrink: 0;
                /* Prevent shrinking */
-               border: 1px solid red;
+               /* border: 1px solid red; */
           }
 
           #together {
-               display: flex;
-               border: 1px solid black;
+               /* display: flex; */
+               /* border: 1px solid black; */
                gap: 30px;
                margin-right: 75px;
                width: fit-content;
@@ -99,13 +99,14 @@
           }
 
           div {
-               margin 0 auto;
+               margin: 0 auto;
           }
 
           @media (max-width: 900px) {
                footer {
                     align-items: center;
                     flex-direction: column;
+                    /* border: 1px solid red; */
                }
 
                footer div {
@@ -113,15 +114,37 @@
                }
 
                #socials {
-                    margin-left: 0px;
+                    margin: 0;
+                    /* Remove any default margin */
+                    margin-top: 0px;
+                    /* Add some space above it */
+                    /* align-self: flex-start; */
+                    /* Align it to the far left */
+                    width: auto;
+                    /* Allow its width to adjust */
                }
+
+               #socials h2 {
+                    text-align: left;
+                    /* Align heading to the left */
+               }
+
 
                #together {
                     margin: 0 auto;
                     box-sizing: border-box;
                     /* Include border in the total width and height */
                     width: fit-content;
+                    height: fit-content;
                     /* Ensure #together wraps around its contents */
+                    margin-top: 30px;
+               }
+               #together h2{
+                    margin-bottom: 5px;
+               }
+
+               #together div {
+                    margin-bottom: 20px;
                }
           }
      </style>

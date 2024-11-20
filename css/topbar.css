@@ -163,10 +163,6 @@ header.scrolled {
     background-color: #253450 !important;
 }
 
-header.scrolled nav a {
-    color: #dbbf8b !important;
-}
-
 header.scrolled #title {
     color: #dbbf8b !important;
 }
@@ -199,6 +195,7 @@ header.scrolled #title {
     overflow: hidden;
     opacity: 0;
     transition: opacity 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
+    /* background-color: #253450 !important; */
 }
 
 /* Active state for mobile nav */
@@ -227,6 +224,7 @@ header.scrolled #title {
 @media (max-width: 900px) {
     header nav {
         display: none;
+        
     }
     header{
         width: 100%;
