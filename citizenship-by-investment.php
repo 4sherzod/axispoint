@@ -84,6 +84,38 @@
 				width: 100%;
 				/* Full width for each paragraph */
 			}
+
+			.countryImg {
+				width: 50px;
+				/* Smaller image for mobile */
+			}
+
+			table td:first-child {
+				display: flex;
+				flex-direction: column;
+				/* Stack vertically */
+				align-items: center;
+				text-align: center;
+				/* Center-align content */
+			} 
+			table td img {
+				margin-bottom: 0px;
+			}
+
+			.countryImg {
+				max-width: 60px;
+				/* Smaller image for mobile */
+				height: auto;
+				/* Maintain aspect ratio */
+				margin-bottom: 8px;
+				/* Add spacing below image */
+			}
+
+			table td {
+				min-height: 50px;
+				font-size: 12px;
+				/* Adjust text size for mobile */
+			}
 		}
 	</style>
 </head>

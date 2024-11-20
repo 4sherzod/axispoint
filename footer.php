@@ -23,7 +23,7 @@ function renderFooter()
         display: flex;
         gap: 120px;
         margin: auto;
-        width: fit-content;
+
     }
     footer p {
         margin-top: 10px;
@@ -90,6 +90,7 @@ function renderFooter()
             height: fit-content;
             /* Ensure #together wraps around its contents */
             margin-top: 30px;
+
             height: fit-content;
             text-align: center;
         }
