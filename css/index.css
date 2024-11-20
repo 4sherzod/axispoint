@@ -26,7 +26,7 @@ td {
     border-bottom: none;
     width: 33.33%;
     min-height: 400px;
-    max-height: 800px;
+    max-height: 1000px;
 }
 
 .service {
@@ -34,7 +34,7 @@ td {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-height: 600px;
-    max-height: 800px;
+    max-height: 1000px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -197,7 +197,7 @@ p {
 
     .left {
         margin: 15vh auto;
-        width: 500px;
+        width: 100%;
         height: 100vh;
         text-align: left;
         z-index: 1;
@@ -234,6 +234,7 @@ p {
 
     .service {
         height: fit-content;
+        padding-bottom: 5px;
     }
 
     .service>img {
@@ -243,4 +244,8 @@ p {
     .service p {
         padding-bottom: 30px;
     }
+    #desc{
+        width: 100%;
+    }
 }
+

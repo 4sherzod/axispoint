@@ -27,7 +27,11 @@
             background-position: 330px 0px;
             /* border: 1px solid red; */
         } 
-
+        @media (max-width: 400px) {
+            #leftText>h1{
+                background-image: none;
+            }
+        }
             /* background-position: 72% 2%;
         } */
     </style>

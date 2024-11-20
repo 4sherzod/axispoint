@@ -287,6 +287,7 @@
                 justify-content: center;
                 height: auto;
                 padding: 20px;
+                width: 100%;
             }
 
             #emailDivRight {
@@ -326,6 +327,7 @@
 
             #emailDivRight {
                 margin: 0 auto;
+                width: 100%;
             }
 
             #email {
@@ -333,6 +335,10 @@
                 /* Adjust font size for mobile */
                 margin-right: 0;
                 padding-top: 10px;
+                width: 100%;
+            }
+            .form-container{
+                width: 100%;
             }
         }
     </style>
