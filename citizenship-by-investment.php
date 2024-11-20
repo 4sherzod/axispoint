@@ -28,15 +28,6 @@
 			width: 80px;
 		}
 
-		table td:first-child {
-			display: flex;
-		}
-
-		table td:first-child div:nth-child(2) {
-			height: fit-content;
-			margin: auto;
-		}
-
 		h1 {
 			padding-top: 30px;
 		}
