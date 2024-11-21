@@ -42,6 +42,11 @@
 			/* Two-column layout by default */
 			line-height: 1.6;
 		}
+		#tablecountries table td {
+			border-bottom: 1px solid #dbbf8b;
+			padding: 10px;
+			height: fit-content;
+		}
 
 
 		/* Media query for mobile to switch to single-column layout */
@@ -87,6 +92,7 @@
 				/* Stack vertically */
 				align-items: center;
 				text-align: center;
+				height: 100%;
 				/* Center-align content */
 			} 
 			table td img {
@@ -94,7 +100,7 @@
 			}
 
 			.countryImg {
-				max-width: 60px;
+				width: 60px;
 				/* Smaller image for mobile */
 				height: auto;
 				/* Maintain aspect ratio */
@@ -105,7 +111,22 @@
 			table td {
 				min-height: 50px;
 				font-size: 12px;
+				height: fit-content;
+				border-bottom: none;
 				/* Adjust text size for mobile */
+			}
+	
+			#tablecountries table tr:nth-child(2),
+			tr:nth-child(3),
+			tr:nth-child(4),
+			tr:nth-child(5),
+			tr:nth-child(6){
+				border-bottom: none;
+				border-top: 1px solid #dbbf8b;
+			}
+			
+			#tablecountries table tr td:first-child{
+				border: none;
 			}
 		}
 	</style>
@@ -184,7 +205,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="firstRow">
 					<td><img src="./gerb/antigua.png" alt="Antigua and Barbuda" class="countryImg">
 						<div>Antigua and Barbuda</div>
 					</td>
@@ -224,6 +245,7 @@
 					<td class="last">Visa-free access to over 140 countries, with options for both real estate and
 						donation investments.</td>
 				</tr>
+				<tr></tr>
 			</tbody>
 		</table>
 	</section>
