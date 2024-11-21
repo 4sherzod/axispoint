@@ -164,20 +164,25 @@ p {
     height: 100%;
     border: none;
     overflow: hidden;
-}.left {
-    pointer-events: none; /* Disable all interactions for the container */
+}
+
+.left {
+    pointer-events: none;
+    /* Disable all interactions for the container */
     position: relative;
     z-index: 1;
 }
 
 #plswork {
-    pointer-events: auto; /* Enable interactions for this specific element */
-    z-index: 2; /* Ensure it's above overlapping elements */
+    pointer-events: auto;
+    /* Enable interactions for this specific element */
+    z-index: 2;
+    /* Ensure it's above overlapping elements */
     position: relative;
 }
 
 /* Responsive Styles */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     #companyDiv {
         flex-direction: column;
         justify-content: flex-start;
@@ -224,6 +229,9 @@ p {
     /* #leftText>h1{
         margin: auto;
     } */
+}
+
+@media (max-width: 900px) {
 
     table tr,
     table td {
@@ -244,8 +252,8 @@ p {
     .service p {
         padding-bottom: 30px;
     }
-    #desc{
+
+    #desc {
         width: 100%;
     }
 }
-
