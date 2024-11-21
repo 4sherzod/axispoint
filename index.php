@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div id="globe-container" style=" text-align: left">
+        <div id="globe-container" style=" text-align: left; width:100%;">
             <iframe src="globe.html" frameborder="0" style="width: 100%; height: 100%; overflow: hidden;"
                 scrolling="no"></iframe>
         <!-- <div class="globe-container">
