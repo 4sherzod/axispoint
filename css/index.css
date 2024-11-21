@@ -242,11 +242,7 @@ p {
     /* Keeps its layout intact */
 }
 
-#leftText {
-    width: 100%;
-    margin: 50px auto;
-    color: white;
-}
+
 
 /* #leftText>h1{
     margin: auto;
