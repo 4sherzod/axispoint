@@ -287,7 +287,6 @@
                 justify-content: center;
                 height: auto;
                 padding: 20px;
-                width: 100%;
             }
 
             #emailDivRight {
@@ -327,7 +326,6 @@
 
             #emailDivRight {
                 margin: 0 auto;
-                width: 100%;
             }
 
             #email {
@@ -335,10 +333,6 @@
                 /* Adjust font size for mobile */
                 margin-right: 0;
                 padding-top: 10px;
-                width: 100%;
-            }
-            .form-container{
-                width: 100%;
             }
         }
     </style>
@@ -372,7 +366,7 @@
                                 <li><span>
                                         <p>Speak to us</p>
                                     </span></li>
-                                <li><span>axispoint@gmail.com</span></li>
+                                <li><span>contact@axispoint.me</span></li>
                             </ul>
                         </div>
                     </a>
@@ -396,7 +390,7 @@
                     </a>
                 </td>
                 <td>
-                    <a href="tel:+1234567890">
+                    <a href="tel:+97145580736">
                         <div class="service">
                             <div class="container">
                                 <i class="fa-solid fa-phone-volume" style="transform: rotate(-45deg);"></i>
@@ -408,13 +402,13 @@
                                 <li><span>
                                         <p>Mon-Fri from 8am to 5pm</p>
                                     </span></li>
-                                <li><span>+1234567890</span></li>
+                                <li><span>+97145580736</span></li>
                             </ul>
                         </div>
                     </a>
                 </td>
                 <td>
-                    <a href="https://wa.me/905317750250">
+                    <a href="https://wa.me/97145580736">
                         <div class="service">
                             <div class="container">
                                 <i class="fa-brands fa-whatsapp" style="font-size:35px;"></i>
@@ -426,7 +420,7 @@
                                 <li><span>
                                         <p>WhatsApp</p>
                                     </span></li>
-                                <li><span>+1234567890</span></li>
+                                <li><span>+97145580736</span></li>
                             </ul>
                         </div>
                     </a>
@@ -440,12 +434,12 @@
         <div id="emailDivRight">
             <h1 id="email" class="dark">Contact Us</h1>
             <div class="form-container" class="dark">
-                <form action="/submit-form" method="post" id="form">
+                <form action="send_email.php" method="post" id="form">
                     <input type="text" name="name" placeholder="Name">
                     <input type="email" name="email" placeholder="E-mail" required>
                     <input type="tel" name="phone" placeholder="Phone" required>
                     <textarea name="comments" placeholder="Message" rows="4" required></textarea>
-                    <input type="button" value="Book Now!" class="button">
+                    <input type="submit" value="Book Now!" class="button">
                 </form>
             </div>
         </div>
