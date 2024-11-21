@@ -122,10 +122,7 @@ h1 {
      border: 1px solid red;
 } */
 
-#tablecountries table td {
-     border-bottom: 1px solid #dbbf8b;
-     padding: 10px;
-}
+
 .last{ 
      max-width: 350px;
 }
@@ -173,5 +170,14 @@ h1 {
      }
      #companyDiv>div>h1{
           margin-top: 50px;
+     }
+     .benefits{
+          display: block;
+          width: 100%;
+          /* border: 1px solid red; */
+     }
+     .benefit{
+          /* border: 1px solid green; */
+          margin: 20px auto;
      }
  }
