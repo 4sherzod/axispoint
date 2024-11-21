@@ -225,6 +225,9 @@ p {
         margin: 50px auto;
         color: white;
     }
+    iframe {
+        pointer-events: none;  /* Disable interaction */
+    }
 
     /* #leftText>h1{
         margin: auto;
@@ -292,8 +295,5 @@ table td {
 
     #desc {
         width: 100%;
-    }
-    iframe {
-        pointer-events: none;  /* Disable interaction */
     }
 }
