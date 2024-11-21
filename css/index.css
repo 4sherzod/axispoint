@@ -256,4 +256,7 @@ p {
     #desc {
         width: 100%;
     }
+    iframe {
+        pointer-events: none;  /* Disable interaction */
+    }
 }
