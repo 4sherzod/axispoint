@@ -231,6 +231,47 @@ p {
     } */
 }
 
+
+
+#plzwork {
+    pointer-events: auto;
+    /* Enables interaction */
+    z-index: 2;
+    /* Places it above overlapping elements */
+    position: relative;
+    /* Keeps its layout intact */
+}
+
+#leftText {
+    width: 100%;
+    margin: 50px auto;
+    color: white;
+}
+
+/* #leftText>h1{
+    margin: auto;
+} */
+
+table tr,
+table td {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.service {
+    height: fit-content;
+}
+
+.service>img {
+    height: 45vh;
+}
+
+.service p {
+    padding-bottom: 30px;
+}
+
+
 @media (max-width: 900px) {
 
     table tr,
